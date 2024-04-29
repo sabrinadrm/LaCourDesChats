@@ -1,0 +1,115 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">La Cour Des Chats</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor04">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="{{path('app_home')}}">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">À Propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+          
+          <div>
+           <a href="#" class="btn btn-sm btn-primary btn-lg" > Profil  </a>
+          
+          </div>
+
+            {# <form action="{{ path('app_login') }}" method="post">
+                <button type="submit" class="btn btn-link">Connexion</button>
+            </form> #}
+
+           {# <div>
+                <a class="btn btn-sm btn-primary btn-lg" href={{path('app_login')}}> Connexion  </a> <br> 
+          </div> 
+        {% if app.user == false %}
+            <a  class="btn btn-sm btn-primary btn-lg" href={{path('app_register')}}> Inscription  </a>
+        {% else %}
+            {# <form action="{{ path('app_logout') }}" method="post">
+                <button type="submit" class="btn btn-sm btn-primary btn-lg">Déconnexion</button>
+            </form> #}
+              {# <div>
+                <a class="btn btn-sm btn-primary btn-lg" href={{path('app_logout')}}> Deconnexion </a>  
+            </div> #}
+        {# {% endif %} #} 
+{# 
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+{# <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{path('app_home')}}">La Cour Des Chats</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="{{path('app_home')}}">Acceuil
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Manu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chats</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">À Propos</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex">
+          
+          <div>
+           <a href="#" class="btn btn-sm btn-primary btn-lg" > Profil  </a>
+          
+          </div>
+
+            {# <form action="{{ path('app_login') }}" method="post">
+                <button type="submit" class="btn btn-link">Connexion</button>
+            </form> #}
+
+           {# <div>
+                <a class="btn btn-sm btn-primary btn-lg" href={{path('app_login')}}> Connexion  </a> <br> 
+          </div> 
+        {% if app.user == false %}
+            <a  class="btn btn-sm btn-primary btn-lg" href={{path('app_register')}}> Inscription  </a>
+        {% else %}
+            {# <form action="{{ path('app_logout') }}" method="post">
+                <button type="submit" class="btn btn-sm btn-primary btn-lg">Déconnexion</button>
+            </form> #}
+              {# <div>
+                <a class="btn btn-sm btn-primary btn-lg" href={{path('app_logout')}}> Deconnexion </a>  
+            </div> #}
+        {# {% endif %} #} 
+{# 
+      </form>
+    </div>
+  </div>
+</nav> #} 
