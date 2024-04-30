@@ -1,9 +1,12 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">La Cour Des Chats</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        {# <a class="navbar-brand" href="{{path('app_home')}}">La Cour Des Chats</a> #}
+        <a class="navbar-brand" href="{{ path('app_home') }}" style="margin: 0 20px;">
+             <img src="{{ asset('image/ban/logo_n-removebg-preview.png') }}" alt="Logo de La Cour Des Chats" style="width: 100px; padding: 8px;">
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
     <div class="collapse navbar-collapse" id="navbarColor04">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
@@ -12,16 +15,16 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Menu</a>
+          <a class="nav-link" href="{{path('app_menu')}}">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Chats</a>
+          <a class="nav-link" href="{{path('app_chats')}}">Chats</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">À Propos</a>
+          <a class="nav-link" href="{{path('app__propos')}}">À Propos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="{{path('app_contact')}}">Contact</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -31,24 +34,24 @@
           
           </div>
 
-            {# <form action="{{ path('app_login') }}" method="post">
-                <button type="submit" class="btn btn-link">Connexion</button>
-            </form> #}
+                {# <form action="{{ path('app_login') }}" method="post">
+                    <button type="submit" class="btn btn-link">Connexion</button>
+                </form> #}
 
-           {# <div>
-                <a class="btn btn-sm btn-primary btn-lg" href={{path('app_login')}}> Connexion  </a> <br> 
-          </div> 
-        {% if app.user == false %}
-            <a  class="btn btn-sm btn-primary btn-lg" href={{path('app_register')}}> Inscription  </a>
-        {% else %}
-            {# <form action="{{ path('app_logout') }}" method="post">
-                <button type="submit" class="btn btn-sm btn-primary btn-lg">Déconnexion</button>
-            </form> #}
-              {# <div>
-                <a class="btn btn-sm btn-primary btn-lg" href={{path('app_logout')}}> Deconnexion </a>  
-            </div> #}
-        {# {% endif %} #} 
-{# 
+            {# <div>
+                    <a class="btn btn-sm btn-primary btn-lg" href={{path('app_login')}}> Connexion  </a> <br> 
+            </div> 
+                {% if app.user == false %}
+                    <a  class="btn btn-sm btn-primary btn-lg" href={{path('app_register')}}> Inscription  </a>
+                {% else %}
+                    {# <form action="{{ path('app_logout') }}" method="post">
+                        <button type="submit" class="btn btn-sm btn-primary btn-lg">Déconnexion</button>
+                    </form> #}
+                    {# <div>
+                        <a class="btn btn-sm btn-primary btn-lg" href={{path('app_logout')}}> Deconnexion </a>  
+                    </div> #}
+                {# {% endif %} #} 
+
       </form>
     </div>
   </div>
