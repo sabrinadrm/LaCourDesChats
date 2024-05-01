@@ -2,5 +2,49 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.image-container {
+    margin: 50px 0;
+}
 
+.product-container {
+    display: flex;
+    justify-content: space-around;
+}
 
+.product-item {
+    flex: 1;
+    margin: 25px;
+    text-align: center;
+}
+
+.product-box {
+    background-color: #efddcc;
+    padding: 0px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+.resized-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+.product-box P {
+    margin: 20px 0;
+}
+
+.product-box p {
+    margin: 20px 0;
+    background-color: #bba97f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
