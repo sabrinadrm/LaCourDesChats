@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-class ÀProposController extends AbstractController
+class TarifController extends AbstractController
 {
-    #[Route('//propos', name: 'app__propos')]
+    #[Route('/tarif', name: 'app_tarif')]
     public function index(): Response
     {
-        return $this->render('Àpropos/concept.html.twig', [
-            'controller_name' => 'ÀProposController',
+        return $this->render('tarif/index.html.twig', [
+            'controller_name' => 'TarifController',
         ]);
     }
 }
