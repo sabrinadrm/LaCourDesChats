@@ -3,15 +3,36 @@
 {% block title %}Hello ContactController!{% endblock %}
 
 
+{% block stylesheets %}
+     <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+{% endblock %}
 
 {% block body %}
-    <div class="example-wrapper">
-    <img src="{{ asset('image/ban/contact.png') }}" alt="Texte alternatif" style="width: 100%; margin-bottom: 20px;">   <br>
-   
-    <div class="container">
-        <p style="text-align: center;">lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+
+<div class="form-container">
+      <form class="form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required="">
+        </div>
+        <div class="form-group">
+          <label for="email">nom</label>
+          <input type="text" id="email" name="email" required="">
+        </div>
+        <div class="form-group">
+          <label for="email">prenom</label>
+          <input type="text" id="email" name="email" required="">
+        </div>
+        <div class="form-group">
+          <label for="textarea">message</label>
+          <input name="textarea" id="textarea" rows="10" cols="50" required="" />  
+        </div>
+        <div class="button">
+        <button class="form-submit-btn" type="submit">Submit</button>
+        </div>
+      </form>
     </div>
-    <hr class="separator" style="border: 1; border-top: 13px solid #8B4513; margin: 2rem 0;">
-</div>
+
 {% endblock %}
 

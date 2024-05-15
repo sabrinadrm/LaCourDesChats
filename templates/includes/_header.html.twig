@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-        {# <a class="navbar-brand" href="{{path('app_home')}}">La Cour Des Chats</a> #}
         <a class="navbar-brand" href="{{ path('app_home') }}" style="margin: 0 20px;">
              <img src="{{ asset('image/ban/logo_n-removebg-preview.png') }}" alt="Logo de La Cour Des Chats" style="width: 100px; padding: 8px;">
         </a>
@@ -10,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarColor04">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="{{path('app_home')}}">Home
+          <a class="nav-link active" href="{{path('app_home')}}">Accueil
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
@@ -18,10 +17,13 @@
           <a class="nav-link" href="{{path('app_tarif')}}">Tarif</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{path('app_chats')}}">Les Chats</a>
+          <a class="nav-link" href="{{path('app_chats')}}">Les chats</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{path('app_concept')}}">Concept</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{path('app_atelier')}}">Atelier</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{path('app_reservation')}}">Réserver</a>
@@ -32,10 +34,10 @@
       </ul>
       <form class="d-flex">
           
-          <div>
+          {# <div>
            <a href="#" class="btn btn-sm btn-primary btn-lg" > Profil  </a>
           
-          </div>
+          </div> #}
 
                 {# <form action="{{ path('app_login') }}" method="post">
                     <button type="submit" class="btn btn-link">Connexion</button>
