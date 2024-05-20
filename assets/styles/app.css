@@ -221,4 +221,14 @@ section.card .visual img {
 
 
  
-  
+#chat-image {
+  background-image: url('assets/image/chat-dessin.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px; /* Ajustez la taille selon vos besoins */
+  height: 200px; /* Ajustez la taille selon vos besoins */
+  position: relative;
+  left: -50px; /* Ajustez la position selon vos besoins */
+  bottom: -20px; /* Ajustez la position selon vos besoins */
+}
+

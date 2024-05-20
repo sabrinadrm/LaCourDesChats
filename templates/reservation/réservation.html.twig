@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ReservationController!{% endblock %}
+{% block title %}Réservation - La Cour des Chats{% endblock %}
 
 {% block body %}
 
 
-<div class="example-wrapper">
-    <img src="{{ asset('image/ban/reservation.png') }}" alt="logo" class="img-fluid mx-auto d-block" style="width: 100%; border-radius: 50px; ">   <br>
+<div class="header">
+    <img src="{{ asset('image/ban/reservation.png') }}" alt="Texte alternatif" class="img-fluid mx-auto d-block" style="width: 90%; border-radius: 60px; ">   <br>
    
     <div class="container">
        <h1>Réservez dès maintenant votre table à la cour des chats</h1> 
@@ -16,37 +16,60 @@
 </div>
 
 
-  
-<div class='input-container'>
 
-    <img src="{{ asset('image/ban/logo_n-removebg-preview.png') }}"  alt="logo" style="width: 20%; margin-bottom: 50px; display: flex; flex-direction: row;">
-    <form action="/submit-reservation" method="post">
-        <label for="date">Date :</label>
-        <input type="date" id="date" name="date" required><br>
-        <label for="time">Heure :</label>
-        <input type="time" id="time" name="time" required><br>
-            <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="name">prénom :</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="phone">Numéro de téléphone :</label>
-        <input type="tel" id="phone" name="phone" required><br>
-        <label for="email">E-mail :</label>
-        <input type="email" id="email" name="email" required><br>
-        <label for="people">Nombre de personnes :</label>
-        <select id="people" name="people">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-        </select><br>
+<form method="post">
+        <table>
+            <tr>
+                <td>Nom:</td>
+                <td><input type="text" name="nom"></td>
+                <td>Prénom:</td>
+                <td><input type="text" name="prenom"></td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" name="date"></td>
+                <td>Heure:</td>
+                <td><input type="time" name="heure"></td>
+            </tr>
+            <tr>
+                <td>Adresse email:</td>
+                <td><input type="email" name="email"></td>
+                <td>Nombre de personnes:</td>
+                <td><input type="number" name="nombrePersonnes"></td>
+            </tr>
+        </table>
         <button type="submit">Réserver</button>
     </form>
-   
-</div>
+
+    <div id="chat-image">
+        <!-- Image du chat avec ses pattes -->
+    </div>
+
+
+<footer style="background-color: black; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: flex-start;">
+    <!-- Logo de la Cour des Chats -->
+    <div style="text-align: left;">
+        <img src="{{ asset('image/footer.png') }}" alt="Logo de la Cour des Chats" style="width: 100px;">
+        <p>© 2024 - La Cour des Chats</p>
+    </div>
+
+    <!-- Liens au milieu -->
+    <div style="text-align: center; width: 25%;">
+        <h3>Liens utiles</h3>
+        <ul style="list-style-type: none;">
+            <li><a href="#accueil" style="color: white; text-decoration: none;">Accueil</a></li>
+            <li><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
+            <li><a href="#tarifs" style="color: white; text-decoration: none;">Tarifs</a></li>
+            <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Carte sur la droite -->
+    <div style="text-align: right; width: 30%;">
+        <h3>Nous trouver</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.7746384183043!2d0.6891786160528681!3d47.39081563373817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fbeafa472f2a79%3A0x292585c8a66c3aa4!2s18%20Rue%20Gambetta%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1642957881533!5m2!1sen!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>
 
 
 
