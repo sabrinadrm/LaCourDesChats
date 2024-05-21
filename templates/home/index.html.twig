@@ -29,11 +29,12 @@
         <img src="{{ asset('image/atelier_pot2.png') }}" alt="Image 3" style="width: 240px; height: 230px; margin-right: 10px;">
         </div>
     </div></br>
-      <div class="text-content" style="text-align: center; font-size: 1.75rem;  margin-top: 70px">
-        <h3>Atelier</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
-        <a  href="{{path('app_atelier')}}">Atelier</a>
+      <div class="text-content" style="text-align: justify; font-size: 1.75rem;  margin-top: 70px">
+        <div class="container">
+          <h3 style="text-align: center;">Chatelier</h3>
+          <p>Bienvenue dans notre espace dédié à la créativité et à l'expression artistique et un lieu de rencontre, de partage et de convivialité. Chez La Cour des Chats, nous sommes fiers d'offrir une gamme d'ateliers stimulants où chacun peut laisser libre cours à son imagination et explorer son côté artistique. Découvrez nos ateliers de peinture, de poterie et de création de colliers, conçus pour inspirer et émerveiller.</p>  
+          <a  href="{{path('app_atelier')}}">Chatelier</a>
+        </div>
       </div>
 </section></br>  
 
@@ -72,8 +73,7 @@
     <section class="card">
       <div class="text-content">
           <h3>Les chats</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+          <p>Au cœur de notre établissement, vous trouverez des amis à quatre pattes tout aussi accueillants que nos boissons et gourmandises. Chez La Cour des Chats, nous avons le plaisir d'accueillir une joyeuse bande de félins, prêts à vous offrir compagnie et câlins tout au long de votre visite.</p>  
           <a  href="{{path('app_tarif')}}">Les chats</a>
       </div>
       <div class="visual">
@@ -93,21 +93,32 @@
   </button>
 </div>
 
-<section >
-  <div class="container">
-      <div class="row">
-          <div class="col-7">
-              <p style="text-align: justify; font-size: 1.25rem;  margin-top: 70px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-center">
-                <button type="button" class="btn btn-dark" style="justify-content: center;">Les Chats</button>
-              </div>
-          </div>       
-          <div class="col-2 d-flex align-items-center">
-              <img src="{{ asset('image/flyer/chat.png') }}" alt="Image 1" class="img-fluid">
-          </div>
-      </div>
-  </div>
-</section> 
+
+<footer style="background-color: black; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: flex-start;">
+    <!-- Logo de la Cour des Chats -->
+    <div style="text-align: left;">
+        <img src="{{ asset('image/footer.png') }}" alt="Logo de la Cour des Chats" style="width: 100px;">
+        <p>© 2024 - La Cour des Chats</p>
+    </div>
+
+    <!-- Liens au milieu -->
+    <div style="text-align: center; width: 25%;">
+        <h3>Liens utiles</h3>
+        <ul style="list-style-type: none;">
+            <li><a href="#accueil" style="color: white; text-decoration: none;">Accueil</a></li>
+            <li><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
+            <li><a href="#tarifs" style="color: white; text-decoration: none;">Tarifs</a></li>
+            <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Carte sur la droite -->
+    <div style="text-align: right; width: 30%;">
+        <h3>Nous trouver</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.7746384183043!2d0.6891786160528681!3d47.39081563373817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fbeafa472f2a79%3A0x292585c8a66c3aa4!2s18%20Rue%20Gambetta%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1642957881533!5m2!1sen!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybB5IXNxFwWQfE7u8Lj+XJHAxKlXiG/8rsrtpb6PEdzD828Ii" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyni

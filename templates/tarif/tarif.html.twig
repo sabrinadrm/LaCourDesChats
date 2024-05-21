@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MenuController!{% endblock %}
+{% block title %}Carte et Tarif{% endblock %}
 
 {% block body %}
 
@@ -10,7 +10,7 @@
     
 </div>
 <div class="container">
-    <p style="text-align: center;">lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+    <p style="text-align: center;">Que vous soyez à la recherche de nouveauté ou que vous souhaitiez savourer vos classiques préférés, notre catégorie Boissons est conçue pour répondre à toutes vos envies. Chaque produit est sélectionné avec soin pour garantir une expérience de dégustation optimale, dans le respect de la qualité et de l'authenticité. Mais nous proposons aussi de la Gourmandises qui est un véritable paradis pour les amateurs de délices sucrés et salés. C'est une variété de gourmandises faites maison, ainsi que des classiques irrésistibles, afin de satisfaire toutes vos envies gourmandes</p>
      <hr class="separator" style="border: 1; border-top: 13px solid #8B4513; margin: 2rem 0; margin-top: 50px;">   
 </div></br>
 
@@ -123,10 +123,17 @@
             </div>
         </div></br>
 
-
-
-    <hr class="separator" style="border: 1; border-top: 13px solid #8B4513; margin: 2rem 0; margin-top: 50px;"> 
+        <div class="container">
+          <h3>Nos Boissons Maison</h3>
+          <p style="text-align: justify;">Découvrez notre gamme de boissons faites maison, élaborées avec amour et passion. Utilisant des ingrédients frais et de qualité, nous créons des boissons uniques qui captivent les sens. Nos recettes artisanales sont le fruit de nombreuses expérimentations pour vous offrir des saveurs authentiques et surprenantes. Que vous ayez envie d'un thé glacé rafraîchissant, d'une limonade pétillante ou d'un jus de fruits frais, chaque boisson maison est préparée pour vous procurer une expérience gustative inoubliable.</p>
+        </div></br>
+        <div class="container">
+          <h3>Nos Boissons de Marque</h3>
+          <p style="text-align: justify;">Pour ceux qui préfèrent les valeurs sûres, nous proposons également une sélection de boissons de marques reconnues. Profitez de la qualité et de la fiabilité de vos marques favorites, soigneusement choisies pour leur excellence et leur popularité. Que ce soit des sodas pétillants, des jus de fruits pressés, ou des boissons énergétiques, vous trouverez certainement ce que vous cherchez parmi notre offre variée.</p>
+        </div>
+        <hr class="separator" style="border: 1; border-top: 13px solid #8B4513; margin: 2rem 0; margin-top: 50px;"> 
 </div>
+
 
 
        {# gourmandise #}
@@ -198,9 +205,41 @@
                 </div>
             </div> 
         </div></br>   
+
+        <div class="container">
+          <h3>Nos Bagels</h3>
+          <p style="text-align: justify;">Pour une pause salée, découvrez notre sélection de bagels. Nous proposons des bagels classiques, garnis de délicieux ingrédients pour satisfaire les amateurs de saveurs traditionnelles. Pour nos clients végétariens, nous avons également une gamme de bagels végétariens, composés de produits frais et savoureux, sans compromis sur le goût. Chaque bagel est préparé avec soin pour garantir une expérience culinaire riche et satisfaisante.</p>
+        </div></br>
+        <div class="container">
+          <h3>Nos Gâteaux</h3>
+          <p style="text-align: justify;">Chez La Cour des Chats, nous savons que chaque occasion mérite une touche sucrée. Nos gâteaux, élaborés avec amour et expertise, sont parfaits pour célébrer vos moments spéciaux ou simplement pour vous offrir une douce pause gourmande. Que vous soyez adepte du chocolat intense, des fruits frais ou des saveurs crémeuses, notre sélection de gâteaux saura combler toutes vos envies.</p>
+        </div>
 </div></br> 
 
 
+<footer style="background-color: black; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: flex-start;">
+    <!-- Logo de la Cour des Chats -->
+    <div style="text-align: left;">
+        <img src="{{ asset('image/footer.png') }}" alt="Logo de la Cour des Chats" style="width: 100px;">
+        <p>© 2024 - La Cour des Chats</p>
+    </div>
 
+    <!-- Liens au milieu -->
+    <div style="text-align: center; width: 25%;">
+        <h3>Liens utiles</h3>
+        <ul style="list-style-type: none;">
+            <li><a href="#accueil" style="color: white; text-decoration: none;">Accueil</a></li>
+            <li><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
+            <li><a href="#tarifs" style="color: white; text-decoration: none;">Tarifs</a></li>
+            <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Carte sur la droite -->
+    <div style="text-align: right; width: 30%;">
+        <h3>Nous trouver</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.7746384183043!2d0.6891786160528681!3d47.39081563373817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fbeafa472f2a79%3A0x292585c8a66c3aa4!2s18%20Rue%20Gambetta%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1642957881533!5m2!1sen!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>
 
 {% endblock %}
