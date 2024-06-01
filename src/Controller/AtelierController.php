@@ -11,7 +11,7 @@ class AtelierController extends AbstractController
     #[Route('/atelier', name: 'app_atelier')]
     public function index(): Response
     {
-        return $this->render('atelier/index.html.twig', [
+        return $this->render('atelier/atelier.html.twig', [
             'controller_name' => 'AtelierController',
         ]);
     }

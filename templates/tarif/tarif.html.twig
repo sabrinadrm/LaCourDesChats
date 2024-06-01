@@ -4,217 +4,208 @@
 
 {% block body %}
 
-<div class="example-wrapper">
-    <img src="{{ asset('image/ban/tarif.png') }}" alt="Texte alternatif" class="img-fluid mx-auto d-block" style="width: 90%; border-radius: 50px; ">   <br>
-   
-    
-</div>
-<div class="container">
-    <p style="text-align: center;">Que vous soyez à la recherche de nouveauté ou que vous souhaitiez savourer vos classiques préférés, notre catégorie Boissons est conçue pour répondre à toutes vos envies. Chaque produit est sélectionné avec soin pour garantir une expérience de dégustation optimale, dans le respect de la qualité et de l'authenticité. Mais nous proposons aussi de la Gourmandises qui est un véritable paradis pour les amateurs de délices sucrés et salés. C'est une variété de gourmandises faites maison, ainsi que des classiques irrésistibles, afin de satisfaire toutes vos envies gourmandes</p>
-     <hr class="separator" style="border: 1; border-top: 13px solid #8B4513; margin: 2rem 0; margin-top: 50px;">   
-</div></br>
+{% block stylesheets %}
+     <link rel="stylesheet" href="{{ asset('styles/tarif.css') }}">
+{% endblock %}
 
-         {# boisson #}
-<div class="container">
-  <h1>Appréciez un nouveau style de café et de boisson</h1>
-    <p style='text-align: center;'>Explorez toutes les saveurs d'une bonne boisson avec nous. Il y a toujours une nouvelle tasse qui vaut la peine d'être dégustée</p> </br>
-    
-             {# ligne 1 des produits #}
-        <div class="product-container">
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/La_duchesse_Asahi.png') }}" alt="Milk Shake Cappuccino">
-                    <h4>La Duchesse Asahi</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
+<section>
+      <div class="ban" style="position: relative;"> 
+          <img src="{{ asset('image/ban/tarif.png') }}" alt="Texte alternatif" class="img-fluid mx-auto d-block" style="width: 90%; border-radius: 60px; "> 
+      </div> 
+</section>
+<section>
+    <div class="container">
+        <p style="text-align: center;font-size: 1.55rem;">Que vous soyez à la recherche de nouveauté ou que vous souhaitiez savourer vos classiques préférés, notre catégorie Boissons est conçue pour répondre à toutes vos envies. Chaque produit est sélectionné avec soin pour garantir une expérience de dégustation optimale, dans le respect de la qualité et de l'authenticité. Mais nous proposons aussi de la Gourmandises qui est un véritable paradis pour les amateurs de délices sucrés et salés. C'est une variété de gourmandises faites maison, ainsi que des classiques irrésistibles, afin de satisfaire toutes vos envies gourmandes</p>  
+    </div>
+</section>
 
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/chocolat_viennois_classique.png') }}" alt="Milk Shake">
-                   <h4>Chocolat Viennois </h4>
-                    <p>$8.50</p>
+<section>
+            {# boisson #}
+    <div class="container">
+      <h1>Appréciez un nouveau style de café et de boisson</h1>
+        <h5 style='text-align: center;'>Explorez toutes les saveurs d'une bonne boisson avec nous. Il y a toujours une nouvelle tasse qui vaut la peine d'être dégustée</h5> 
+                {# ligne 1 des produits #}
+            <div class="product-container">
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/La_duchesse_Asahi.png') }}" alt="image boisson Milk Shake Cappuccino">
+                        <h4>La Duchesse Asahi</h4>
+                        <p>$8.50</p>
+                    </div>
                 </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/chocolat_viennois_classique.png') }}" alt="image boisson Milk Shake">
+                    <h4>Chocolat Viennois </h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/frappuccino.png') }}" alt="image boisson frappuccino">
+                        <h4>Frappuccino</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/chocolat_chaud_pain_d`epice.png') }}" alt="image boisson ">
+                        <h4>Chocolat Chaud</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+            </div></br>
+                {# ligne 2 des produits #}
+            <div class="product-container">
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/Comtesse.png') }}" alt="image boisson Comtesse Câline">
+                        <h4>La Comtesse Câline</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/frappuccino_caramel.png') }}" alt="image boisson frappuccino caramel">
+                        <h4>Frappuccino </h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/chocolat_chaud.png') }}" alt="image boisson chocolat chaud">
+                        <h4>Chocolat Chaud</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/chocolat_chaud_rose.png') }}" alt="image boisson chocolat chaud rose">
+                        <h4>Chocolat Chaud</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div> 
+            </div></br>
+                {# ligne 3 #}
+            <div class="product-container">
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/jus_d’ananas.png') }}" alt="image boisson jus d’ananas">
+                        <h4>Jus D’Ananas</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/la_loere.png') }}" alt="image Boisson la loère">
+                        <h4>La Loère</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/sirop.png') }}" alt="image boisson Sirop">
+                        <h4>Sirop</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/boisson/chocolat_chaud_pain_d`epice.png') }}" alt="image boisson chocolat chaud pain d`epice ">
+                        <h4>Chocolat Chaud</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+            </div></br>
+            <div class="container">
+                <h3>Nos Boissons Maison</h3>
+                <p style="text-align: justify; font-size: 1.55rem;">Découvrez notre gamme de boissons faites maison, élaborées avec amour et passion. Utilisant des ingrédients frais et de qualité, nous créons des boissons uniques qui captivent les sens. Nos recettes artisanales sont le fruit de nombreuses expérimentations pour vous offrir des saveurs authentiques et surprenantes. Que vous ayez envie d'un thé glacé rafraîchissant, d'une limonade pétillante ou d'un jus de fruits frais, chaque boisson maison est préparée pour vous procurer une expérience gustative inoubliable.</p>
+            </div></br>
+            <div class="container">
+                <h3>Nos Boissons de Marque</h3>
+                <p style="text-align: justify; font-size: 1.55rem;">Pour ceux qui préfèrent les valeurs sûres, nous proposons également une sélection de boissons de marques reconnues. Profitez de la qualité et de la fiabilité de vos marques favorites, soigneusement choisies pour leur excellence et leur popularité. Que ce soit des sodas pétillants, des jus de fruits pressés, ou des boissons énergétiques, vous trouverez certainement ce que vous cherchez parmi notre offre variée.</p>
             </div>
+    </div>
+</section>
 
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/frappuccino.png') }}" alt="frappuccino">
-                    <h4>Frappuccino</h4>
-                    <p>$8.50</p>
+<section>
+        {# gourmandise #}
+    <div class="container">
+        <h1>Appréciez un nouveau style de Gourmandise</h1>
+        <h5 style='text-align: center;'>Explorez toutes les saveurs d'une bonne Gourmandise avec nous. Il y a toujours une nouvelle chause qui vaut la peine d'être dégustée</h5> 
+                {# ligne 1 des produits #}
+            <div class="product-container">
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/gourmandise/bagel.png') }}" alt="image gourmandise bagel">
+                        <h4>Bagel</h4>
+                        <p>$8.50</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/chocolat_chaud_pain_d`epice.png') }}" alt="Product 4">
-                    <h4>Chocolat Chaud</h4>
-                    <p>$8.50</p>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/gourmandise/bagel_vegan.png') }}" alt="image gourmandise bagel vegan">
+                    <h4>Bagel Vegan</h4>
+                        <p>$8.50</p>
+                    </div>
                 </div>
-            </div>
-        </div></br>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/gourmandise/Pancake_myrtilles.png') }}" alt="image gourmandise Pancake myrtilles">
+                        <h4>Pancake Myrtilles</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/gourmandise/Pancakes.png') }}" alt="image gourmandise Pancake">
+                        <h4>Pancake</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+            </div></br>
+                {# ligne 2 des produits #}
+            <div class="product-container">
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/gourmandise/brookie.png') }}" alt="image gourmandise Brookie">
+                        <h4>Brookie</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/gourmandise/fondant_au_chocolat.png') }}" alt="image gourmandise fondant au chocolat">
+                        <h4>Fondant au Chocolat </h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/gourmandise/cookie.png') }}" alt="image gourmandise cookie au chocolat">
+                        <h4>Cookie au Chocolat</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-item">
+                        <img class="resized-image" src="{{ asset('image/gourmandise/muffins_au_chocolat.png') }}" alt="image gourmandise muffins au chocolat">
+                        <h4>Muffins au Chocolat</h4>
+                        <p>$8.50</p>
+                    </div>
+                </div> 
+            </div></br>   
 
-
-             {# ligne 2 des produits #}
-         <div class="product-container">
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/Comtesse.png') }}" alt="Comtesse Câline">
-                    <h4>La Comtesse Câline</h4>
-                    <p>$8.50</p>
-                </div>
+            <div class="container">
+                <h3>Nos Bagels</h3>
+                <p style="text-align: justify; font-size: 1.55rem;">Pour une pause salée, découvrez notre sélection de bagels. Nous proposons des bagels classiques, garnis de délicieux ingrédients pour satisfaire les amateurs de saveurs traditionnelles. Pour nos clients végétariens, nous avons également une gamme de bagels végétariens, composés de produits frais et savoureux, sans compromis sur le goût. Chaque bagel est préparé avec soin pour garantir une expérience culinaire riche et satisfaisante.</p>
+            </div></br>
+            <div class="container">
+                <h3>Nos Gâteaux</h3>
+                <p style="text-align: justify; font-size: 1.55rem;">Chez La Cour des Chats, nous savons que chaque occasion mérite une touche sucrée. Nos gâteaux, élaborés avec amour et expertise, sont parfaits pour célébrer vos moments spéciaux ou simplement pour vous offrir une douce pause gourmande. Que vous soyez adepte du chocolat intense, des fruits frais ou des saveurs crémeuses, notre sélection de gâteaux saura combler toutes vos envies.</p>
             </div>
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/frappuccino_caramel.png') }}" alt="frappuccino caramel">
-                    <h4>Frappuccino </h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/chocolat_chaud.png') }}" alt="chocolat chaud">
-                    <h4>Chocolat Chaud</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/chocolat_chaud_rose.png') }}" alt="chocolat chaud rose">
-                    <h4>Chocolat Chaud</h4>
-                    <p>$8.50</p>
-                </div>
-            </div> 
-        </div></br>
-
-
-            {# ligne 3 #}
-         <div class="product-container">
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/jus_d’ananas.png') }}" alt="jus d’ananas">
-                    <h4>Jus D’Ananas</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/la_loere.png') }}" alt="Boisson la loère">
-                    <h4>La Loère</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/sirop.png') }}" alt="Sirop">
-                    <h4>Sirop</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/boisson/chocolat_chaud_pain_d`epice.png') }}" alt="Product 4">
-                    <h4>Chocolat Chaud</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-        </div></br>
-
-        <div class="container">
-          <h3>Nos Boissons Maison</h3>
-          <p style="text-align: justify;">Découvrez notre gamme de boissons faites maison, élaborées avec amour et passion. Utilisant des ingrédients frais et de qualité, nous créons des boissons uniques qui captivent les sens. Nos recettes artisanales sont le fruit de nombreuses expérimentations pour vous offrir des saveurs authentiques et surprenantes. Que vous ayez envie d'un thé glacé rafraîchissant, d'une limonade pétillante ou d'un jus de fruits frais, chaque boisson maison est préparée pour vous procurer une expérience gustative inoubliable.</p>
-        </div></br>
-        <div class="container">
-          <h3>Nos Boissons de Marque</h3>
-          <p style="text-align: justify;">Pour ceux qui préfèrent les valeurs sûres, nous proposons également une sélection de boissons de marques reconnues. Profitez de la qualité et de la fiabilité de vos marques favorites, soigneusement choisies pour leur excellence et leur popularité. Que ce soit des sodas pétillants, des jus de fruits pressés, ou des boissons énergétiques, vous trouverez certainement ce que vous cherchez parmi notre offre variée.</p>
-        </div>
-        <hr class="separator" style="border: 1; border-top: 13px solid #8B4513; margin: 2rem 0; margin-top: 50px;"> 
-</div>
-
-
-
-       {# gourmandise #}
-<div class="container">
-  <h1>Appréciez un nouveau style de Gourmandise</h1>
-    <p style='text-align: center;'>Explorez toutes les saveurs d'une bonne Gourmandise avec nous. Il y a toujours une nouvelle chause qui vaut la peine d'être dégustée</p> </br>
-    
-             {# ligne 1 des produits #}
-        <div class="product-container">
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/gourmandise/bagel.png') }}" alt="bagel">
-                    <h4>Bagel</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/gourmandise/bagel_vegan.png') }}" alt="bagel vegan">
-                   <h4>Bagel Vegan</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/gourmandise/Pancake_myrtilles.png') }}" alt="Pancake myrtilles">
-                    <h4>Pancake Myrtilles</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/gourmandise/Pancakes.png') }}" alt="Pancake">
-                    <h4>Pancake</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-        </div></br>
-
-
-             {# ligne 2 des produits #}
-         <div class="product-container">
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/gourmandise/brookie.png') }}" alt="Brookie">
-                    <h4>Brookie</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/gourmandise/fondant_au_chocolat.png') }}" alt="fondant au chocolat">
-                    <h4>Fondant au Chocolat </h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/gourmandise/cookie.png') }}" alt="cookie au chocolat">
-                    <h4>Cookie au Chocolat</h4>
-                    <p>$8.50</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-item">
-                    <img class="resized-image" src="{{ asset('image/gourmandise/muffins_au_chocolat.png') }}" alt="muffins au chocolat">
-                    <h4>Muffins au Chocolat</h4>
-                    <p>$8.50</p>
-                </div>
-            </div> 
-        </div></br>   
-
-        <div class="container">
-          <h3>Nos Bagels</h3>
-          <p style="text-align: justify;">Pour une pause salée, découvrez notre sélection de bagels. Nous proposons des bagels classiques, garnis de délicieux ingrédients pour satisfaire les amateurs de saveurs traditionnelles. Pour nos clients végétariens, nous avons également une gamme de bagels végétariens, composés de produits frais et savoureux, sans compromis sur le goût. Chaque bagel est préparé avec soin pour garantir une expérience culinaire riche et satisfaisante.</p>
-        </div></br>
-        <div class="container">
-          <h3>Nos Gâteaux</h3>
-          <p style="text-align: justify;">Chez La Cour des Chats, nous savons que chaque occasion mérite une touche sucrée. Nos gâteaux, élaborés avec amour et expertise, sont parfaits pour célébrer vos moments spéciaux ou simplement pour vous offrir une douce pause gourmande. Que vous soyez adepte du chocolat intense, des fruits frais ou des saveurs crémeuses, notre sélection de gâteaux saura combler toutes vos envies.</p>
-        </div>
-</div></br> 
+    </div></br> 
+</section>
 
 
 <footer style="background-color: black; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: flex-start;">
@@ -224,7 +215,7 @@
         <p>© 2024 - La Cour des Chats</p>
     </div>
 
-    <!-- Liens au milieu -->
+    <!-- Liens  -->
     <div style="text-align: center; width: 25%;">
         <h3>Liens utiles</h3>
         <ul style="list-style-type: none;">
@@ -235,7 +226,7 @@
         </ul>
     </div>
 
-    <!-- Carte sur la droite -->
+    <!-- Carte  -->
     <div style="text-align: right; width: 30%;">
         <h3>Nous trouver</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.7746384183043!2d0.6891786160528681!3d47.39081563373817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fbeafa472f2a79%3A0x292585c8a66c3aa4!2s18%20Rue%20Gambetta%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1642957881533!5m2!1sen!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

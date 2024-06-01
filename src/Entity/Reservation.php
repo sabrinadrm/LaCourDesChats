@@ -15,25 +15,22 @@ class Reservation
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $nom = null;
+    private ?string $Nom = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $prenom = null;
+    private ?string $Prenom = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $mail = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $avatar = null;
+    private ?string $Mail = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
-    private ?\DateTimeInterface $date = null;
+    private ?\DateTimeInterface $Date = null;
 
     #[ORM\Column(type: Types::TIME_MUTABLE)]
-    private ?\DateTimeInterface $heur = null;
+    private ?\DateTimeInterface $Heur = null;
 
     #[ORM\Column]
-    private ?int $nombrePersonnes = null;
+    private ?int $Nombre_Personnes = null;
 
     public function getId(): ?int
     {
@@ -42,85 +39,75 @@ class Reservation
 
     public function getNom(): ?string
     {
-        return $this->nom;
+        return $this->Nom;
     }
 
-    public function setNom(string $nom): static
+    public function setNom(string $Nom): static
     {
-        $this->nom = $nom;
+        $this->Nom = $Nom;
 
         return $this;
     }
 
     public function getPrenom(): ?string
     {
-        return $this->prenom;
+        return $this->Prenom;
     }
 
-    public function setPrenom(string $prenom): static
+    public function setPrenom(string $Prenom): static
     {
-        $this->prenom = $prenom;
+        $this->Prenom = $Prenom;
 
         return $this;
     }
 
     public function getMail(): ?string
     {
-        return $this->mail;
+        return $this->Mail;
     }
 
-    public function setMail(string $mail): static
+    public function setMail(string $Mail): static
     {
-        $this->mail = $mail;
-
-        return $this;
-    }
-
-    public function getAvatar(): ?string
-    {
-        return $this->avatar;
-    }
-
-    public function setAvatar(string $avatar): static
-    {
-        $this->avatar = $avatar;
+        $this->Mail = $Mail;
 
         return $this;
     }
 
     public function getDate(): ?\DateTimeInterface
     {
-        return $this->date;
+        return $this->Date;
     }
 
-    public function setDate(\DateTimeInterface $date): static
+    public function setDate(\DateTimeInterface $Date): static
     {
-        $this->date = $date;
+        $this->Date = $Date;
 
         return $this;
     }
 
     public function getHeur(): ?\DateTimeInterface
     {
-        return $this->heur;
+        return $this->Heur;
     }
 
-    public function setHeur(\DateTimeInterface $heur): static
+    public function setHeur(\DateTimeInterface $Heur): static
     {
-        $this->heur = $heur;
+        $this->Heur = $Heur;
 
         return $this;
     }
 
     public function getNombrePersonnes(): ?int
     {
-        return $this->nombrePersonnes;
+        return $this->Nombre_Personnes;
     }
 
-    public function setNombrePersonnes(int $nombrePersonnes): static
+    public function setNombrePersonnes(int $Nombre_Personnes): static
     {
-        $this->nombrePersonnes = $nombrePersonnes;
+        $this->Nombre_Personnes = $Nombre_Personnes;
 
         return $this;
     }
+
+    
 }

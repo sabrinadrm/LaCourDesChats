@@ -1,0 +1,70 @@
+.custom-card {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #fff;
+    border: 2px solid #000;
+    margin: 10px;
+  }
+  .custom-card .card-body {
+    text-align: center;
+    padding: 20px;
+  }
+  .custom-card .btn {
+    margin-top: 10px;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(99, 99, 99, 0.5); /* optional for better readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .overlay-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .overlay-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  .overlay-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .overlay-content form input,
+  .overlay-content form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+  }
+  .overlay-content form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  .dark-image {
+    filter: brightness(50%); /* Ajustez la valeur pour obtenir l'effet de sombre souhaité */
+  }
+  

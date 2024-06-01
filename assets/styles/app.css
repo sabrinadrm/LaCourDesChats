@@ -1,156 +1,94 @@
+/* Style général du body */
 body {
-    background-color: #f3efeb;
-}
-
-.image-container {
-    margin: 100px 0;
+  background-color: #f3efeb;
 }
 
 
-
-.product-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.product-item {
-    flex: 1;
-    margin: 25px;
-    text-align: center;
-}
-
-.product-box {
-    background-color: #efddcc;
-    padding: 0px;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.product-item img {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-}
-
-.resized-image {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-}
-
-.product-box P {
-    margin: 20px 0;
-}
-
-.product-box p {
-    margin: 20px 0;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
+/* Mise en page en flex pour le formulaire */
 form {
-    width: 100%;
-    max-width: 40rem;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
 }
-
+/* Mise en page en flex pour le conteneur d'entrée */
 .input-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
 }
-
+/* Mise en page en flex pour le conteneur d'entrée */
 .input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+/* Mise en page en flex pour le formulaire dans le conteneur d'entrée */
 .input-container form {
-    width: 100%;
-    max-width: 30rem;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
 }
-
+/* Style pour l'étiquette du formulaire */
 .input-container label {
-    width: 100%;
-    text-align: left;
-    padding: 0 0.5rem;
-    box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
 }
-
+/* Style pour l'entrée de texte du formulaire */
 .input-container input,
 .input-container select {
-    width: 100%;
-    padding: 0.25rem 0.5rem;
-    box-sizing: border-box;
-    margin-bottom: 0.5rem;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
 }
-
+/* Style pour le bouton du formulaire */
 .input-container button {
-    width: 100%;
-    padding: 0.25rem 0.5rem;
-    box-sizing: border-box;
-    margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
 }
 
+
+/* carousel Boisson,gourmandise,chats */
+/* Marge inférieure pour la section */
 section {
-    margin-bottom: 40px; /* ajouter un espace pixels entre les sections */
-
-  }
-
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+  margin-bottom: 40px; /* ajouter un espace pixels entre les sections */
 }
-body {
-  margin: 0;
-  padding: 10px;
-  font-size: 21px;
-  background: #fff;
-  color: #000;
-  font-family: "Poppins", sans-serif;
-}
+/* Mise en page en flex pour la carte */
 section.card {
-  background: #000046;
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
-  background: linear-gradient(to right, #000046, #1CB5E0);
-  border-radius: 24px 24px 24px 48px;
-  padding: 48px 48px 48px 308px;
-  margin: 84px 0;
-  min-width: 640px;
   display: flex;
   flex-direction: row;
   align-self: flex-start;
   position: relative;
   box-shadow: 5px 0 0 0 rgba(204,204,204,0.3), -5px 0 0 0 rgba(204,204,204,0.3), 0 5px 0 0 rgba(204,204,204,0.3);
 }
-section.card .text-content {
+/* Mise en page en flex pour le contenu de la carte */
+section.card.text-content {
   display: flex;
   flex-direction: column;
   width:calc(60vw - 192px);
 }
-section.card .text-content h3 {
+/* Style pour le titre de la carte */
+section.card.text-content h3 {
   margin: 0;
   font-size: 1.5em;
   max-width: 20ch;
   color: #fff;
 }
-section.card .text-content p {
+/* Style pour le texte de la carte */
+section.card.text-content p {
   margin: 25px 0 24px;
   color: #fff;
 }
-section.card .text-content a {
+/* Style pour le bouton de la carte */
+section.card.text-content a {
   border: 3px solid #f2f2f2;
   color: #ffffff;
   align-self: flex-start;
@@ -159,9 +97,9 @@ section.card .text-content a {
   border-radius: 12px;
   transition: 400ms all;
 }
-section.card .text-content a:hover {
-  background: #051c5e;
-  color: white;
+/* Style pour le survol du bouton de la carte */
+section.card.text-content a:hover {
+  background: #051c5e
 }
 section.card .visual {
   width: 240px;
@@ -176,59 +114,76 @@ section.card .visual img {
   height: 110%;
 }
 
-@media all and (max-width: 1100px) {
-  body {
-    padding: 96px 48px 24px;
-  }
-
-  section.card {
-    min-width: 100%;
-  }
-  section.card .text-content {
-    width: 100%;
-  }
+body {
+  font-family: 'Abril Fatface', serif;
 }
-@media all and (max-width: 720px) {
-  body {
-    padding: 48px 24px 0;
-  }
-  section.card {
-    margin: 64px 0;
-    padding: 88px 36px 36px;
-    flex-direction: column;
-    border-radius: 24px;
-  }
-  section.card .text-content h3 {
-    max-width:calc(100% - 150px);
-    font-size: 1em;
-  }
-  section.card .text-content p,
-  section.card .text-content a {
-    font-size: 0.8em;
-  }
-  section.card .visual {
-    width: 150px;
-    height: 150px;
-    right: 16px;
-    left: auto;
-    border-radius: 50%;
-  }
-  section.card .visual img{
-    width: 100%;
-    height: auto;
-    }
+h5 {
+  font-family: 'Abril Fatface', serif;
+}
+p {
+  font-family: 'Abril Fatface', serif;
 }
 
+/* atelier */
+.card-container {
+  display: flex;
+  justify-content: center;
+}
 
- 
-#chat-image {
-  background-image: url('assets/image/chat-dessin.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 200px; /* Ajustez la taille selon vos besoins */
-  height: 200px; /* Ajustez la taille selon vos besoins */
+.card {
+  flex: 10; /* ajout de cette ligne pour que les cartes prennent une largeur égale */
+  max-width: 300px; /* suppression de cette ligne pour que les cartes prennent la largeur disponible */
+  margin: 10px /* ajout de cette ligne pour ajouter un espace entre les cartes */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
   position: relative;
-  left: -50px; /* Ajustez la position selon vos besoins */
-  bottom: -20px; /* Ajustez la position selon vos besoins */
 }
 
+.card h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.card button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.details {
+  display: none;
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.details p {
+  margin: 0;
+}

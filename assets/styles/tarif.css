@@ -1,0 +1,54 @@
+/* Marge supérieure et inférieure pour l'image-container */
+.image-container {
+    margin: 100px 0;
+  }
+  
+  /* Mise en page en flex pour le conteneur de produits */
+  .product-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Style pour chaque élément de produit */
+  .product-item {
+    flex: 1;
+    margin: 25px;
+    text-align: center;
+  }
+  
+  /* Style pour la boîte du produit */
+  .product-box {
+    background-color: #efddcc;
+    padding: 0px;
+    border-radius: 25px;
+    text-align: center;
+  }
+  
+  /* Taille et positionnement de l'image du produit */
+  .product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+  
+  /* Taille et positionnement de l'image redimensionnée */
+  .resized-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+  
+  /* Marge interne pour le texte du produit */
+  .product-box P {
+    margin: 20px 0;
+  }
+  
+  /* Style pour le texte du produit */
+  .product-box p {
+    margin: 20px 0;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
