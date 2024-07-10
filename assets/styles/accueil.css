@@ -1,0 +1,85 @@
+/* Style général du body */
+body {
+    background-color: #efeae6;
+  }
+  
+  .ban {
+    position: relative;
+  }
+  
+  .ban-image {
+    width: 90%;
+    border-radius: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .image-item {
+    width: 225px;
+    height: 230px;
+    margin-right: 10px;
+  }
+  
+  .spacer {
+    width: 100%;
+    height: 15px;
+  }
+  
+  .text-content {
+    text-align: justify;
+    font-size: 1.75rem;
+    margin-top: 70px;
+  }
+  
+  .white-background {
+    background-color: #FFFFFF;
+  }
+  
+  .flyer-image {
+    width: 450px;
+    height: 350px;
+    margin-right: 10px;
+  }
+  
+  /* // footer // */
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-logo {
+    text-align: left;
+  }
+  
+  .footer-image {
+    width: 100px;
+  }
+  
+  .footer-links {
+    text-align: center;
+    width: 25%;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-map {
+    text-align: right;
+    width: 30%;
+  }

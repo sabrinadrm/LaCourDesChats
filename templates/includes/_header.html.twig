@@ -22,9 +22,9 @@
         <li class="nav-item">
           <a class="nav-link" href="{{path('app_concept')}}">Concept</a>
         </li>
-        {# <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="{{path('app_atelier')}}">Atelier</a>
-        </li> #}
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="{{path('app_reservations')}}">Réserver</a>
         </li>
@@ -34,10 +34,10 @@
       </ul>
       <form class="d-flex">     
             {% if app.user %}
-            <div>
-              <a href="#" class="btn ms-auto btn-sm btn-dark btn-lg " > Profil  </a>
-              <a class="btn ms-auto btn-sm btn-dark btn-lg " href="{{path('app_logout')}}"> Deconnexion </a>  
-            </div> 
+              <div>
+                <a href="{{path('app_profil')}}" class="btn ms-auto btn-sm btn-dark btn-lg " > Profil  </a>
+                <a class="btn ms-auto btn-sm btn-dark btn-lg " href="{{path('app_logout')}}"> Deconnexion </a>  
+              </div> 
             {% else %}
               <div>
                 <a  class="btn ms-auto btn-sm btn-dark btn-lg ms-auto" href="{{path('app_register')}}"> Inscription  </a>

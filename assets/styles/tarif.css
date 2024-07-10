@@ -1,48 +1,111 @@
-/* Marge supérieure et inférieure pour l'image-container */
-.image-container {
-    margin: 100px 0;
-  }
-  
-  /* Mise en page en flex pour le conteneur de produits */
-  .product-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  /* Style pour chaque élément de produit */
-  .product-item {
-    flex: 1;
-    margin: 25px;
-    text-align: center;
-  }
-  
-  /* Style pour la boîte du produit */
-  .product-box {
-    background-color: #efddcc;
-    padding: 0px;
-    border-radius: 25px;
-    text-align: center;
-  }
-  
-  /* Taille et positionnement de l'image du produit */
-  .product-item img {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-  }
-  
-  /* Taille et positionnement de l'image redimensionnée */
-  .resized-image {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-  }
-  
-  /* Marge interne pour le texte du produit */
-  .product-box P {
-    margin: 20px 0;
-  }
-  
+/*Style de base pour le corps */
+body {
+  font-family: Arial, sans-serif; /* Définit la famille de police à Arial */
+ 
+  color: #333; /* Définit la couleur de texte à #333 */
+  background-color: #efeae6; 
+}
+
+
+
+/* Style pour la bannière */
+.ban {
+  position: relative; /* Rend la bannière relative */
+}
+
+.ban img {
+  width: 90%; /* Définit la largeur de l'image de bannière à 90% */
+  border-radius: 60px; /* Ajoute un rayon de bordure à l'image */
+  margin: 0 auto; /* Centre l'image horizontalement */
+  display: block; /* Fait de l'image un élément de bloc */
+}
+
+/* Style pour les paragraphes de description */
+.description {
+  text-align: center; /* Centre le texte */
+  font-size: 1.55rem; /* Définit la taille de police à 1.55rem */
+  margin-bottom: 20px; /* Ajoute un espace entre les éléments */
+}
+
+/* Style pour les conteneurs de produits */
+.product-container {
+  display: flex; /* Fait du conteneur un conteneur flex */
+  flex-wrap: wrap; /* Autorise le conteneur à passer à la ligne suivante */
+  justify-content: center; /* Centre les produits horizontalement */
+  margin-bottom: 20px; /* Ajoute un espace entre les éléments */
+}
+
+/* Style pour les boîtes de produits */
+.product-box {
+  width: 19%; /* Définit la largeur de chaque boîte de produit à 25% */
+  margin: 10px; /* Ajoute un espace entre les boîtes */
+  background-color: #efddcc; 
+  border: 1px solid #ddd; /* Ajoute une bordure à la boîte */
+  padding: 10px; /* Ajoute un padding à la boîte */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre à la boîte */
+}
+
+/* Style pour les éléments de produits */
+.product-item {
+  text-align: center; /* Centre le texte */
+  margin-bottom: 20px; /* Ajoute un espace entre les éléments */
+}
+
+.product-item img {
+  width: 100%; /* Définit la largeur de l'image de produit à 100% */
+  height: 150px; /* Définit la hauteur de l'image de produit à 150px */
+  object-fit: cover; /* Fait de l'image une image de couverture */
+  border-radius: 10px; /* Ajoute un rayon de bordure à l'image */
+  margin-bottom: 10px; /* Ajoute un espace entre les éléments */
+}
+
+.product-item h4 {
+  font-size: 18px; /* Définit la taille de police à 18px */
+  font-weight: bold; /* Rend le texte gras */
+  margin-bottom: 10px; /* Ajoute un espace entre les éléments */
+}
+
+.product-item p {
+  font-size: 16px; /* Définit la taille de police à 16px */
+  color: #666; /* Définit la couleur de texte à #666 */
+  margin-bottom: 10px; /* Ajoute un espace entre les éléments */
+}
+
+/* Style pour les titres */
+h1, h3, h5 {
+  font-weight: bold; /* Rend le texte gras */
+  margin-bottom: 20px; /* Ajoute un espace entre les éléments */
+}
+
+h1 {
+  font-size: 24px; /* Définit la taille de police à 24px */
+}
+
+h3 {
+  font-size: 20px; /* Définit la taille de police à 20px */
+}
+
+h5 {
+  font-size: 18px; /* Définit la taille de police à 18px */
+  text-align: center; /* Centre le texte */
+}
+
+/* Style pour le conteneur */
+.container {
+  max-width: 1200px; /* Définit la largeur maximale à 1200px */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  padding: 20px; /* Ajoute un padding au conteneur */
+}
+
+/* Style pour les images redimensionnées */
+.resized-image {
+  width: 100%; /* Définit la largeur de l'image à 100% */
+  height: 150px; /* Définit la hauteur de l'image à 150px */
+  object-fit: cover; /* Fait de l'image une image de couverture */
+  border-radius: 10px; /* Ajoute un rayon de bordure à l'image */
+  margin-bottom: 10px; /* Ajoute un espace entre les éléments */
+}
+
   /* Style pour le texte du produit */
   .product-box p {
     margin: 20px 0;

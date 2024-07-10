@@ -27,7 +27,7 @@ class Reservation
     private ?\DateTimeInterface $Date = null;
 
     #[ORM\Column(type: Types::TIME_MUTABLE)]
-    private ?\DateTimeInterface $Heur = null;
+    private ?\DateTimeInterface $Heure = null;
 
     #[ORM\Column]
     private ?int $Nombre_Personnes = null;
@@ -85,14 +85,14 @@ class Reservation
         return $this;
     }
 
-    public function getHeur(): ?\DateTimeInterface
+    public function getHeure(): ?\DateTimeInterface
     {
-        return $this->Heur;
+        return $this->Heure;
     }
 
-    public function setHeur(\DateTimeInterface $Heur): static
+    public function setHeure(\DateTimeInterface $Heure): static
     {
-        $this->Heur = $Heur;
+        $this->Heure = $Heure;
 
         return $this;
     }

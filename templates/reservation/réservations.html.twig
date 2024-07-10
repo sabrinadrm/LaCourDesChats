@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réservation - La Cour des Chats{% endblock %}
+
+{% block body %}
+
+
+
+
+<div class="header">
+    <img src="{{ asset('image/ban/reservation.png') }}" alt="Texte alternatif" class="img-fluid mx-auto d-block" style="width: 90%; border-radius: 60px; ">   <br>
+   
+    <div class="container">
+       <h1>Réservez dès maintenant votre table à la cour des chats</h1> 
+    </div>
+
+    <hr class="separator" style="border: 1; border-top: 13px solid #8B4513; margin: 2rem 0;">
+</div>
+
+<section style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ asset('image/ban/logo_n-removebg-preview.png') }}" alt="Logo du bar" class="logo">
+            </div>
+            <div class="col-md-6">
+                <h2>Informations sur la réservation</h2>
+                <p>Vous pouvez réserver votre table en ligne, ou si vous venez au bar nous prennons sans réservations</p>
+                <form method="post" class="large-form">
+                    <table>
+                        <tr>
+                            <td>Nom:</td>
+                            <td><input type="text" name="nom"></td>
+                            <td>Prénom:</td>
+                            <td><input type="text" name="prenom"></td>
+                        </tr>
+                        <tr>
+                            <td>Date:</td>
+                            <td><input type="date" name="date"></td>
+                            <td>Heure:</td>
+                            <td><input type="time" name="heure"></td>
+                        </tr>
+                        <tr>
+                            <td>Adresse email:</td>
+                            <td><input type="email" name="email"></td>
+                            <td>Nombre de personnes:</td>
+                            <td><input type="number" name="nombrePersonnes"></td>
+                        </tr>
+                    </table>
+                    <button class="btn btn-dark" type="submit">Réserver</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
+

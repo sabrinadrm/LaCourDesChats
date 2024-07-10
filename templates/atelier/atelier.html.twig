@@ -4,18 +4,13 @@
 
 {% block body %}
 
-{% block stylesheets %}
-     <link rel="stylesheet" href="{{ asset('styles/atelier.css') }}">
-{% endblock %}
-
-
 <section>
-      <div class="ban" style="position: relative;"> 
-          <img src="{{ asset('image/ban/atelier.png') }}" alt="Texte alternatif" class="img-fluid mx-auto d-block" style="width: 90%; border-radius: 60px; "> 
-
-      </div> </br>
+    <div class="ban"> 
+        <div class="ban-image">
+        <img src="{{ asset('image/ban/atelier.png') }}" alt="Image de l'atelier" class="img-fluid mx-auto d-block"> 
+        </div>
+    </div> 
 </section>
-
 
 <section>
     <div class="card-container">
@@ -39,28 +34,28 @@
 
 
 
-<footer style="background-color: black; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: flex-start;">
+<footer>
     <!-- Logo de la Cour des Chats -->
-    <div style="text-align: left;">
-        <img src="{{ asset('image/footer.png') }}" alt="Logo de la Cour des Chats" style="width: 100px;">
+    <div class="logo">
+        <img src="{{ asset('image/footer.png') }}" alt="Logo de la Cour des Chats">
         <p>© 2024 - La Cour des Chats</p>
     </div>
 
     <!-- Liens au milieu -->
-    <div style="text-align: center; width: 25%;">
+    <div class="links">
         <h3>Liens utiles</h3>
-        <ul style="list-style-type: none;">
-            <li><a href="#accueil" style="color: white; text-decoration: none;">Accueil</a></li>
-            <li><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
-            <li><a href="#tarifs" style="color: white; text-decoration: none;">Tarifs</a></li>
-            <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
     <!-- Carte sur la droite -->
-    <div style="text-align: right; width: 30%;">
+    <div class="map">
         <h3>Nous trouver</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.7746384183043!2d0.6891786160528681!3d47.39081563373817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fbeafa472f2a79%3A0x292585c8a66c3aa4!2s18%20Rue%20Gambetta%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1642957881533!5m2!1sen!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.7746384183043!2d0.6891786160528681!3d47.39081563373817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fbeafa472f2a79%3A0x292585c8a66c3aa4!2s18%20Rue%20Gambetta%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1642957881533!5m2!1sen!2sfr" width="400" height="300" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </footer>
 {% endblock %}

@@ -1,84 +1,133 @@
-
+/* Style de base pour le corps */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 300px;
-    width: 100%;
-    position: relative;
-  }
-  
-  .card h2 {
-    font-size: 1.5em;
-    margin-top: 0;
-  }
-  
-  .card button {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .card button:hover {
-    background-color: #0056b3;
-  }
-  
-  .details {
-    display: none;
-    margin-top: 10px;
-    font-size: 1em;
-    line-height: 1.6;
-  }
-  
-  .details p {
-    margin: 0;
-  }
-  
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-  
-    .card {
-        max-width: 100%;
-    }
-  }
+  font-family: Arial, sans-serif; /* Définit la famille de police à Arial */
+  background-color: #f9f9f9; /* Définit la couleur de fond à #f9f9f9 */
+  margin: 0; /* Enlève les marges du corps */
+  padding: 20px; /* Ajoute un padding au corps */
+}
 
- 
+/* Style pour la bannière */
+.ban {
+  position: relative; /* Rend la bannière relative */
+}
 
-  .card-container {
-    display: flex;
-    justify-content: center;
+.ban-image {
+  width: 90%; /* Définit la largeur de l'image de bannière à 90% */
+  height: 100%; /* Définit la hauteur de l'image de bannière à 100% */
+  object-fit: cover; /* Fait de l'image une image de couverture */
+  border-radius: 60px; /* Ajoute un rayon de bordure à l'image */
+}
+
+/* Style pour le conteneur */
+.container {
+  display: flex; /* Fait du conteneur un conteneur flex */
+  flex-wrap: wrap; /* Autorise le conteneur à passer à la ligne suivante */
+  gap: 20px; /* Ajoute un espace entre les éléments du conteneur */
+  justify-content: center; /* Centre les éléments du conteneur horizontalement */
+  
+  /* Style pour les cartes */
+ .card {
+    background-color: #fff; /* Définit la couleur de fond à blanc */
+    border: 1px solid #ddd; /* Ajoute une bordure à la carte */
+    border-radius: 8px; /* Ajoute un rayon de bordure à la carte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre à la carte */
+    padding: 20px; /* Ajoute un padding à la carte */
+    max-width: 300px; /* Définit la largeur maximale à 300px */
+    margin: 10px; /* Ajoute un espace entre les cartes */
+    
+    position: relative; /* Rend la carte relative */
   }
   
-  .card {
-    flex: 10; /* ajout de cette ligne pour que les cartes prennent une largeur égale */
-    max-width: 300px; /* suppression de cette ligne pour que les cartes prennent la largeur disponible */
-    margin: 10px /* ajout de cette ligne pour ajouter un espace entre les cartes */
+  /* Style pour les titres des cartes */
+ .card h2 {
+    font-size: 1.5em; /* Définit la taille de police à 1.5em */
+    margin-top: 0; /* Enlève la marge supérieure */
   }
+  
+  /* Style pour les boutons des cartes */
+ .card button {
+    background-color: #007bff; /* Définit la couleur de fond à #007bff */
+    border: none; /* Enlève la bordure */
+    color: white; /* Définit la couleur de texte à blanc */
+    padding: 10px 20px; /* Ajoute un padding au bouton */
+    text-align: center; /* Centre le texte du bouton */
+    text-decoration: none; /* Enlève la décoration du texte */
+    display: inline-block; /* Fait du bouton un élément de bloc en ligne */
+    font-size: 1em; /* Définit la taille de police à 1em */
+    margin-top: 10px; /* Ajoute un espace entre le bouton et le contenu */
+    cursor: pointer; /* Ajoute un curseur de pointeur */
+    border-radius: 5px; /* Ajoute un rayon de bordure au bouton */
+  }
+  
+  /* Style pour les boutons des cartes au survol */
+ .card button:hover {
+    background-color: #0056b3; /* Définit la couleur de fond au survol à #0056b3 */
+  }
+  
+  /* Style pour les détails des cartes */
+ .details {
+    display: none; /* Cache les détails par défaut */
+    margin-top: 10px; /* Ajoute un espace entre les détails et le contenu */
+    font-size: 1em; /* Définit la taille de police à 1em */
+    line-height: 1.6; /* Définit la hauteur de ligne à 1.6 */
+  }
+  
+  /* Style pour les paragraphes des détails des cartes */
+ .details p {
+    margin: 0; /* Enlève la marge des paragraphes */
+  }
+}
+
+/* Style pour le conteneur de cartes */
+.card-container {
+  display: flex; /* Fait du conteneur de cartes un conteneur flex */
+  justify-content: center; /* Centre les cartes horizontalement */
+}
+
+/* Style pour les cartes */
+.card {
+ flex: 10; /* Fait que les cartes prennent une largeur égale */
+  max-width: 300px; /* Définit la largeur maximale à 300px */
+  margin: 10px; /* Ajoute un espace entre les cartes */
+}
+
+/* Style pour le pied de page */
+.footer {
+  background-color: black; /* Définit la couleur de fond à noir */
+  color: white; /* Définit la couleur de texte à blanc */
+  padding: 20px; /* Ajoute un padding au pied de page */
+  display: flex; /* Fait du pied de page un conteneur flex */
+  justify-content: space-between; /* Centre les éléments du pied de page horizontalement */
+  align-items: flex-start; /* Aligne les éléments du pied de page au début */
+  flex-wrap: wrap; /* Autorise le pied de page à passer à la ligne suivante */
+  font-size: 1em; /* Définit la taille de police à 1em */
+  line-height: 1.6; /* Définit la hauteur de ligne à 1.6 */
+}
+
+/* Style pour le logo du pied de page */
+.footer-logo {
+  text-align: left; /* Centre le logo à gauche */
+}
+
+/* Style pour l'image du pied de page */
+.footer-image {
+  width: 100px; /* Définit la largeur de l'image à 100px */
+}
+
+/* Style pour les liens du pied de page */
+.footer-links {
+  text-align: center; /* Centre les liens */
+  width: 25%; /* Définit la largeur à 25% */
+}
+
+/* Style pour les liens du pied de page */
+.footer-link {
+  color: white; /* Définit la couleur de texte à blanc */
+  text-decoration: none; /* Enlève la décoration du texte */
+}
+
+/* Style pour la carte du pied de page */
+.footer-map {
+  text-align: right; /* Centre la carte à droite */
+  width: 30%; /* Définit la largeur à 30% */
+}
