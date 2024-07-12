@@ -1,6 +1,6 @@
 /* Style général du body */
 body {
-    background-color: #efeae6;
+    background-color: #ffffff;
   }
   
   .ban {
@@ -51,35 +51,3 @@ body {
     margin-right: 10px;
   }
   
-  /* // footer // */
-  .footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .footer-logo {
-    text-align: left;
-  }
-  
-  .footer-image {
-    width: 100px;
-  }
-  
-  .footer-links {
-    text-align: center;
-    width: 25%;
-  }
-  
-  .footer-link {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer-map {
-    text-align: right;
-    width: 30%;
-  }
