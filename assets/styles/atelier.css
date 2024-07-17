@@ -17,28 +17,27 @@ body {
   object-fit: cover; /* Fait de l'image une image de couverture */
   border-radius: 60px; /* Ajoute un rayon de bordure à l'image */
 }
-/* Conteneur des cartes */
+
+
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: flex; /* Utilisation de Flexbox pour aligner les cartes sur une seule ligne */
+  justify-content: space-around; /* Répartit l'espace disponible de manière égale autour des cartes */
+  flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si nécessaire */
 }
 
-/* Style pour chaque carte */
 .card {
+  flex: 0 0 calc(33.33% - 20px); /* Ajuste la largeur des cartes pour qu'elles occupent environ un tiers de l'espace disponible */
+  max-width: 300px; /* Largeur maximale des cartes pour éviter qu'elles ne deviennent trop larges */
+  margin: 10px; /* Espacement entre les cartes */
+  padding: 20px; /* Espacement interne des cartes */
+  text-align: center;
   background-color: #fff;
-  color: #000;
   border: 1px solid #ddd;
   border-radius: 8px;
-  max-width: 300px;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
 }
 
 .card img {
-  max-width: 100%;
+  max-width: 250px; /* Assure que les images s'ajustent proportionnellement */
   height: auto;
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
@@ -47,27 +46,16 @@ body {
 .card h3 {
   font-size: 1.5em;
   margin: 15px 0;
-  color: #ffffff;
+  color: #333;
 }
 
 .card p {
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 15px;
-  color: #e9e9e9;
+  color: #666;
 }
 
-/* Style pour les détails des cartes */
-.details {
-  display: none; /* Cache les détails par défaut */
-  margin-top: 10px; /* Ajoute un espace entre les détails et le contenu */
-  font-size: 1em; /* Définit la taille de police à 1em */
-  line-height: 1.6; /* Définit la hauteur de ligne à 1.6 */
-}
 
-/* Style pour les paragraphes des détails des cartes */
-.details p {
-  margin: 0; /* Enlève la marge des paragraphes */
-}
 
 
