@@ -1,7 +1,49 @@
+/* style.css */
+
+.header {
+  text-align: center;
+}
+
+.header img {
+  width: 90%;
+  border-radius: 60px;
+}
+
+.separator {
+  border: 1;
+  border-top: 25px solid #8B4513;
+  margin: 2rem 0;
+}
+
 .logo {
-    width: 250px;
-    height: 250px;
-  }
-  .large-form {
-    font-size: 18px;
-  }
+  width: 60%;
+  height: auto;
+}
+
+.large-form table {
+  width: 100%;
+}
+
+.large-form table td {
+  padding: 10px;
+}
+
+.large-form input[type="text"], .large-form input[type="date"], .large-form input[type="time"], .large-form input[type="email"], .large-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.large-form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.large-form button[type="submit"]:hover {
+  background-color: #555;
+}

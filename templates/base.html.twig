@@ -2,10 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+       
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+       
 
        
         {% block stylesheets %}
@@ -21,18 +20,18 @@
         {% endblock %}
     </head>
     <body>
-                {# -- Navbar -- #}
+                   {# -- Navbar -- #}
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ path('app_home') }}" style="margin: 0 20px;">
-                    <img src="{{ asset('image/ban/logo_n-removebg-preview.png') }}" alt="Logo de La Cour Des Chats" style="width: 100px; padding: 8px;">
-                </a>
+                         <a class="navbar-brand" href="{{ path('app_home') }}" >
+                        <img src="{{ asset('image/ban/logo_n-removebg-preview.png') }}" alt="Logo de La Cour Des Chats">
+                         </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor04">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
+                         <li class="nav-item">
                         <a class="nav-link active" href="{{path('app_home')}}">Accueil
                             <span class="visually-hidden">(current)</span>
                         </a>
@@ -57,20 +56,30 @@
                         </li>
                     </ul>
                     <form class="d-flex">     
-                            {% if app.user %}
-                            <div>
+                            {% if 'ROLE_ADMIN' in app.user.roles %}
+                            <button class-'profils'>
+                                <a href="{{path("app_profils")}}">Les profils</a>
+                            </button>
+                            {% endif %}
+                        {% if app.user %} 
+                            <button class='profils'>
+                                <a href="{{path('app_profil')}}"> Mon profil</a>
+                                <button class=' logout'>
+                                    <a href-"{{path('app_logout')}}">Déconnexions</a>
+                                </button>
+                            {# <div>
                                 <a class="btn ms-auto btn-sm btn-dark btn-lg " href="{{path('app_logout')}}"> Deconnexion </a>  
-                            </div> 
+                            </div>  #}
                             {% else %}
                             <div>
                                 <a  class="btn ms-auto btn-sm btn-dark btn-lg ms-auto" href="{{path('app_register')}}"> Inscription  </a>
-                                <a class="btn btn-sm btn-dark btn-lg ms-auto" href="  {{path('app_login')}}"> Connexion  </a>
+                                <a class="btn btn-sm btn-dark btn-lg ms-auto" href="{{path('app_login')}}"> Connexion  </a>
                             </div>
                             {% endif %} 
                     </form>
                 </div>
             </div>
-        </nav>
+         </nav>
 
 
         
@@ -84,11 +93,12 @@
 
 
                 {# -- Footer -- #}
-        {% if app.request.attributes.get('_route') not in ['app_register', 'app_login'] %}
+        {% if app.request.attributes.get('_route') not in ['app_register', 'app_login', 'app_reservations'] %}
+        <div class="footer-1">
         <footer class="footer">
             <!-- Logo de la Cour des Chats -->
             <div>
-                <img src="{{ asset('image/footer.png') }}" alt="Logo de la Cour des Chats" style="width: 100px;">
+                <img src="{{ asset('image/footer.png') }}" alt="Logo de la Cour des Chats" >
                 <p>© 2024 - La Cour des Chats</p>
             </div>
 
@@ -106,10 +116,11 @@
             <!-- Carte  -->
             <div>
                 <h3>Nous trouver</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.7746384183043!2d0.6891786160528681!3d47.39081563373817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fbeafa472f2a79%3A0x292585c8a66c3aa4!2s18%20Rue%20Gambetta%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1642957881533!5m2!1sen!2sfr" width="400" height="300"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.7746384183043!2d0.6891786160528681!3d47.39081563373817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fbeafa472f2a79%3A0x292585c8a66c3aa4!2s18%20Rue%20Gambetta%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1642957881533!5m2!1sen!2sfr"></iframe>
             </div>
         </footer>
-{% endif %}
+        </div>
+        {% endif %}
 
     </body>
 </html>

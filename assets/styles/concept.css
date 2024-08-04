@@ -1,0 +1,187 @@
+.concept-image {
+    width: 100%;
+    padding: 20px;
+    border-radius: 60px;
+    position: relative;
+}
+
+.separator {
+    border: 1px solid #8B4513;
+    margin: 7rem 0;
+    margin-top: 50px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Mobile Devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    /* Concept page */
+    .concept-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .description {
+      font-size: 14px;
+      margin: 10px;
+    }
+    hr.separator {
+      margin: 5px 0;
+    }
+    .product-container {
+      flex-direction: column;
+    }
+    .product-box {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .product-item {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .resized-image {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+  
+    /* Accueil page */
+    .ban-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .image-container {
+      flex-wrap: wrap;
+    }
+    .image-item {
+      width: 50%;
+      margin: 10px;
+    }
+    .text-content {
+      font-size: 14px;
+      margin: 10px;
+    }
+    .flyer-image {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+  
+    /* Carte et Tarif page */
+    .ban {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+   }
+    .resized-image {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+    .product-container {
+      flex-direction: column;
+    }
+    .product-box {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .product-item {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .description {
+      font-size: 14px;
+      margin: 10px;
+    }
+  }
+  
+  /* Tablet Devices (max-width: 768px) */
+  @media only screen and (max-width: 768px) {
+    /* Concept page */
+    .concept-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .description {
+      font-size: 16px;
+      margin: 20px;
+    }
+    hr.separator {
+      margin: 10px 0;
+    }
+    .product-container {
+      flex-direction: column;
+    }
+    .product-box {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .product-item {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .resized-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+  
+    /* Accueil page */
+    .ban-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .image-container {
+      flex-wrap: wrap;
+    }
+    .image-item {
+      width: 50%;
+      margin: 10px;
+    }
+    .text-content {
+      font-size: 16px;
+      margin: 20px;
+    }
+    .flyer-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+  
+    /* Carte et Tarif page */
+    .ban {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .resized-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .product-container {
+      flex-direction: column;
+    }
+    .product-box {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .product-item {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .description {
+      font-size: 16px;
+      margin: 20px;
+    }
+  }

@@ -16,8 +16,7 @@ body {
 .ban img {
   width: 90%; /* Définit la largeur de l'image de bannière à 90% */
   border-radius: 60px; /* Ajoute un rayon de bordure à l'image */
-  margin: 0 auto; /* Centre l'image horizontalement */
-  display: block; /* Fait de l'image un élément de bloc */
+
 }
 
 /* Style pour les paragraphes de description */
@@ -115,3 +114,133 @@ h5 {
     cursor: pointer;
   }
   
+
+  /* Mobile devices */
+@media only screen and (max-width: 480px) {
+  /* Section pour la bannière */
+  section:first-child {
+    padding: 20px;
+  }
+ .ban {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+  }
+ .ban img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Section pour la description */
+ .description {
+    font-size: 16px;
+    margin: 20px;
+  }
+  hr.separator {
+    margin: 10px 0;
+  }
+
+  /* Section pour les boissons */
+ .product-container {
+    flex-direction: column;
+  }
+ .product-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+ .product-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+ .resized-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  /* Section pour les gourmandises */
+ .product-container {
+    flex-direction: column;
+  }
+ .product-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+ .product-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+ .resized-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+/* Tablet devices */
+@media only screen and (max-width: 768px) {
+  /* Section pour la bannière */
+  section:first-child {
+    padding: 30px;
+  }
+ .ban {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+  }
+ .ban img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Section pour la description */
+ .description {
+    font-size: 18px;
+    margin: 30px;
+  }
+  hr.separator {
+    margin: 15px 0;
+  }
+
+  /* Section pour les boissons */
+ .product-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ .product-box {
+    width: 40%;
+    margin: 10px;
+  }
+ .product-item {
+    width: 100%;
+    margin: 10px;
+  }
+ .resized-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  /* Section pour les gourmandises */
+ .product-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ .product-box {
+    width: 40%;
+    margin: 10px;
+  }
+ .product-item {
+    width: 100%;
+    margin: 10px;
+  }
+ .resized-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+}
