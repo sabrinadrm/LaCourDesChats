@@ -63,8 +63,8 @@ class ReservationController extends AbstractController
             $reservation->setNom($request->request->get('nom'));
             $reservation->setPrenom($request->request->get('prenom'));
             $reservation->setMail($request->request->get('email'));
-            $reservation->setDate(new \DateTime($request->request->get('date')));
-            $reservation->setHeure(new \DateTime($request->request->get('heur')));
+            $reservation->setDate(new \DateTimeImmutable($request->request->get('date')));
+            $reservation->setHeure(new \DateTimeImmutable($request->request->get('heur')));
             $reservation->setNombrePersonnes($request->request->get('nombrePersonnes'));
 
 

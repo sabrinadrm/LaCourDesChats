@@ -1,10 +1,3 @@
-/* Style de base pour le corps */
-body {
-  font-family: Arial, sans-serif; /* Définit la famille de police à Arial */
-  background-color: #ffffff; /* Définit la couleur de fond à blanc */
-  margin: 0; /* Enlève les marges du corps */
-  padding: 20px; /* Ajoute un padding au corps */
-}
 
 /* Style pour la bannière */
 .ban {
@@ -58,4 +51,69 @@ body {
 
 
 
+/* only screen and (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  /* section 1 */
+ .ban {
+    height: 150px;
+  }
+ .ban-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* section 2 */
+ .card-container {
+    flex-direction: column;
+  }
+ .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+ .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+ .card h3 {
+    font-size: 18px;
+  }
+ .card p {
+    font-size: 14px;
+  }
+}
 
+/* only screen and (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  /* section 1 */
+ .ban {
+    height: 250px;
+  }
+ .ban-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* section 2 */
+ .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+ .card {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+ .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+ .card h3 {
+    font-size: 20px;
+  }
+ .card p {
+    font-size: 16px;
+  }
+}

@@ -1,13 +1,3 @@
-/*Style de base pour le corps */
-body {
-  font-family: Arial, sans-serif; /* Définit la famille de police à Arial */
- 
-  color: #333; /* Définit la couleur de texte à #333 */
-  background-color: #efeae6; 
-}
-
-
-
 /* Style pour la bannière */
 .ban {
   position: relative; /* Rend la bannière relative */
@@ -91,7 +81,7 @@ h5 {
 
 /* Style pour le conteneur */
 .container {
-  max-width: 1200px; /* Définit la largeur maximale à 1200px */
+  
   margin: 0 auto; /* Centre le conteneur horizontalement */
   padding: 20px; /* Ajoute un padding au conteneur */
 }
@@ -114,133 +104,146 @@ h5 {
     cursor: pointer;
   }
   
-
-  /* Mobile devices */
+/* only screen and (max-width: 480px) */
 @media only screen and (max-width: 480px) {
   /* Section pour la bannière */
-  section:first-child {
-    padding: 20px;
-  }
  .ban {
-    width: 100%;
     height: 150px;
-    margin: 0 auto;
   }
  .ban img {
     width: 100%;
-    height: 100%;
+    height: 150px;
     object-fit: cover;
   }
-
+  
   /* Section pour la description */
+ .container {
+    padding: 20px;
+  }
  .description {
-    font-size: 16px;
-    margin: 20px;
+    font-size: 14px;
   }
   hr.separator {
-    margin: 10px 0;
+    border-top: 10px solid #8B4513;
+    margin: 1rem 0;
   }
-
+  
   /* Section pour les boissons */
  .product-container {
     flex-direction: column;
   }
  .product-box {
     width: 100%;
-    margin: 10px 0;
+    margin-bottom: 20px;
   }
  .product-item {
-    width: 100%;
-    margin: 10px 0;
+    text-align: center;
   }
  .resized-image {
     width: 100%;
     height: 100px;
     object-fit: cover;
   }
-
+  h4 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  
   /* Section pour les gourmandises */
  .product-container {
     flex-direction: column;
   }
  .product-box {
     width: 100%;
-    margin: 10px 0;
+    margin-bottom: 20px;
   }
  .product-item {
-    width: 100%;
-    margin: 10px 0;
+    text-align: center;
   }
  .resized-image {
     width: 100%;
     height: 100px;
     object-fit: cover;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
   }
 }
 
-/* Tablet devices */
+/* only screen and (max-width: 768px) */
 @media only screen and (max-width: 768px) {
   /* Section pour la bannière */
-  section:first-child {
-    padding: 30px;
-  }
  .ban {
-    width: 80%;
-    height: 200px;
-    margin: 0 auto;
+    height: 250px;
   }
  .ban img {
     width: 100%;
-    height: 100%;
+    height: 250px;
     object-fit: cover;
   }
-
+  
   /* Section pour la description */
+ .container {
+    padding: 30px;
+  }
  .description {
     font-size: 18px;
-    margin: 30px;
   }
   hr.separator {
-    margin: 15px 0;
+    border-top: 15px solid #8B4513;
+    margin: 2rem 0;
   }
-
+  
   /* Section pour les boissons */
  .product-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
  .product-box {
-    width: 40%;
-    margin: 10px;
+    width: 50%;
+    margin-bottom: 20px;
   }
  .product-item {
-    width: 100%;
-    margin: 10px;
+    text-align: center;
   }
  .resized-image {
     width: 100%;
     height: 150px;
     object-fit: cover;
   }
-
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+  
   /* Section pour les gourmandises */
  .product-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
  .product-box {
-    width: 40%;
-    margin: 10px;
+    width: 50%;
+    margin-bottom: 20px;
   }
  .product-item {
-    width: 100%;
-    margin: 10px;
+    text-align: center;
   }
  .resized-image {
     width: 100%;
     height: 150px;
     object-fit: cover;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
   }
 }

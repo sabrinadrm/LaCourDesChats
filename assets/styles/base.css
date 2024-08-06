@@ -1,5 +1,11 @@
-  /* // NavBar // */
+body {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: #efeae6; 
+}
 
+/* // NavBar // */
 
 .navbar {
   padding: 1rem;

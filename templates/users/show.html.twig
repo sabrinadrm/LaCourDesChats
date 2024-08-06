@@ -16,12 +16,20 @@
                 <td>{{ user.email }}</td>
             </tr>
             <tr>
-                <th>Roles</th>
-                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
+                <th>Nom </th>
+                <td>{{ user.nom }}</td>
             </tr>
             <tr>
-                <th>Password</th>
-                <td>{{ user.password }}</td>
+                <th>Prénom </th>
+                <td>{{ user.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Téléphone</th>
+                <td>{{ user.telephone }}</td>
+            </tr>
+            <tr>
+                <th>Roles</th>
+                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
             </tr>
             <tr>
                 <th>IsVerified</th>
@@ -30,9 +38,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_users_index') }}">back to list</a>
+    <a href="{{ path('app_users_index') }}">retour à la liste</a>
 
-    <a href="{{ path('app_users_edit', {'id': user.id}) }}">edit</a>
+    <a href="{{ path('app_users_edit', {'id': user.id}) }}">modifier</a>
 
     {{ include('users/_delete_form.html.twig') }}
 {% endblock %}

@@ -1,13 +1,22 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProfilController!{% endblock %}
+{% block title %}Profil - La Cour des Chats{% endblock %}
 
 {% block body %}
-    <h1>Profil</h1>
+<section class=' container'>
+  <div class='justify-content-center'>
+    <div class='col-md-12'>
+      <div class='card'>
+        <h1>Mon Profil</h1>
 
-    <p>Email : {{ userInfo.email }}</p>
-    <p>Rôles : {{ userInfo.roles | join(', ') }}</p>
-    <p>Vérifié : {{ userInfo.isVerified ? 'Oui' : 'Non' }}</p>
+        <p>Email : {{ user.email }}</p>
+        <p>Nom : {{ user.nom }}</p>
+        <p>Prénom : {{ user.prenom }}</p>
+        <p>Numéro de téléphone : {{ user.telephone }}</p>
 
-    <a href="{{ path('edit_profil') }}">Éditer mon profil</a>
+        <a href="{{ path('user_edit', {'id': user.id}) }}">Éditer mon profil</a>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}

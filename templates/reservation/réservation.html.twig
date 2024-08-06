@@ -11,6 +11,11 @@
     <h1>Réservez dès maintenant votre table à la cour des chats</h1>
   </div>
   <hr class="separator">
+  {% for message in app.flashes('success') %}
+      <div class="alert alert-success">
+        {{ message }}
+      </div>
+  {% endfor %}
 </div>
 
 <section>
@@ -48,6 +53,7 @@
       </div>
     </div>
   </div>
+    
 </section>
 
 {% endblock %}
