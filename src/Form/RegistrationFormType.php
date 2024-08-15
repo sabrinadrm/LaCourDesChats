@@ -8,27 +8,51 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\Regex;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TelType;
+use Symfony\Component\Validator\Constraints\Email;
 
 class RegistrationFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('email')
+            ->add('email', TextType::class, [
+                'constraints' => [
+                    new Email([
+                        'message' => 'L\'adresse e-mail est invalide',
+                    ]),
+                ],
+            ])
             ->add('nom', TextType::class, [
                 'label' => 'Nom',
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Le nom est obligatoire',
+                    ]),
+                ],
             ])
             ->add('prenom', TextType::class, [
                 'label' => 'Prénom',
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Le prénom est obligatoire',
+                    ]),
+                ],
             ])
             ->add('telephone', TelType::class, [
                 'label' => 'Numéro de téléphone',
+                'constraints' => [
+                    new Regex([
+                        'pattern' => '/^[0-9]{10}$/',
+                        'message' => 'Le numéro de téléphone doit être composé de 10 chiffres',
+                    ]),
+                ],
             ])
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,

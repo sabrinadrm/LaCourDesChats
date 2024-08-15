@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Entity;
 
 use App\Repository\UserRepository;
@@ -12,56 +11,43 @@ use Symfony\Component\Security\Core\User\UserInterface;
 #[ORM\UniqueConstraint(name: 'UNIQ_IDENTIFIER_EMAIL', fields: ['email'])]
 #[UniqueEntity(fields: ['email'], message: 'There is already an account with this email')]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
-{
-    #[ORM\Id]
+{   #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;
-
     #[ORM\Column(length: 180)]
     private ?string $email = null;
-
     /**
      * @var list<string> The user roles
      */
     #[ORM\Column]
     private array $roles = [];
-
     /**
      * @var string The hashed password
      */
     #[ORM\Column]
     private ?string $password = null;
-
     #[ORM\Column]
     private bool $isVerified = false;
-
     #[ORM\Column(length: 180)]
     private ?string $nom = null;
-
     #[ORM\Column(length: 180)]
     private ?string $prenom = null;
-
     #[ORM\Column(length: 180)]
     private ?string $telephone = null;
-
     public function getId(): ?int
     {
         return $this->id;
     }
-
     public function getEmail(): ?string
     {
         return $this->email;
     }
-
     public function setEmail(string $email): static
     {
         $this->email = $email;
-
         return $this;
     }
-
     /**
      * A visual identifier that represents this user.
      *
@@ -71,7 +57,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         return (string) $this->email;
     }
-
     /**
      * @see UserInterface
      *
@@ -85,7 +70,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return array_unique($roles);
     }
-
     /**
      * @param list<string> $roles
      */
@@ -95,7 +79,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
-
     /**
      * @see PasswordAuthenticatedUserInterface
      */
@@ -103,14 +86,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         return $this->password;
     }
-
     public function setPassword(string $password): static
     {
         $this->password = $password;
 
         return $this;
     }
-
     /**
      * @see UserInterface
      */

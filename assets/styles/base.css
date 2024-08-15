@@ -1,62 +1,52 @@
 body {
-  border: none;
-  margin: 0;
-  padding: 0;
-  background-color: #efeae6; 
+  border: none; /* Supprime la bordure par défaut du corps de la page */
+  margin: 0; /* Supprime la marge par défaut du corps de la page */
+  padding: 0; /* Supprime le padding par défaut du corps de la page */
+  background-color: #efeae6; /* Définit la couleur de fond de la page */
 }
 
 /* // NavBar // */
-
 .navbar {
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
+  padding: 1rem; /* Ajoute un padding de 1rem à la barre de navigation */
+  background-color: #333; /* Définit la couleur de fond de la barre de navigation */
+  color: #fff; /* Définit la couleur de texte de la barre de navigation */
 }
-
 .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.5rem; /* Définit la taille de police de la marque de la barre de navigation */
+  font-weight: bold; /* Définit le poids de police de la marque de la barre de navigation */
 }
-
 .navbar-brand img {
-  width: 100px;
-  padding: 8px;
+  width: 100px; /* Définit la largeur de l'image de la marque de la barre de navigation */
+  padding: 8px; /* Ajoute un padding de 8px à l'image de la marque de la barre de navigation */
 }
-
 .navbar-toggler {
-  border: none;
-  padding: 0.5rem;
-  background-color: transparent;
+  border: none; /* Supprime la bordure par défaut du bouton de toggle de la barre de navigation */
+  padding: 0.5rem; /* Ajoute un padding de 0.5rem au bouton de toggle de la barre de navigation */
+  background-color: transparent; /* Définit la couleur de fond du bouton de toggle de la barre de navigation */
 }
-
 .navbar-toggler-icon {
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 1.5rem; /* Définit la taille de police de l'icône du bouton de toggle de la barre de navigation */
+  color: #fff; /* Définit la couleur de texte de l'icône du bouton de toggle de la barre de navigation */
 }
-
 .navbar-nav {
-  margin-left: auto;
+  margin-left: auto; /* Définit la marge gauche de la liste de navigation de la barre de navigation */
 }
-
 .nav-item {
-  margin-right: 20px;
+  margin-right: 20px; /* Définit la marge droite des éléments de la liste de navigation de la barre de navigation */
 }
-
 .nav-link {
-  color: #000000;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 0.25rem;
+  color: #000000; /* Définit la couleur de texte des liens de la liste de navigation de la barre de navigation */
+  font-size: 1rem; /* Définit la taille de police des liens de la liste de navigation de la barre de navigation */
+  font-weight: bold; /* Définit le poids de police des liens de la liste de navigation de la barre de navigation */
+  border-radius: 0.25rem; /* Définit le rayon de bordure des liens de la liste de navigation de la barre de navigation */
 }
-
 .nav-link:hover {
-  background-color: #444;
-  color: #fff;
+  background-color: #444; /* Définit la couleur de fond des liens de la liste de navigation de la barre de navigation lorsqu'ils sont survolés */
+  color: #fff; /* Définit la couleur de texte des liens de la liste de navigation de la barre de navigation lorsqu'ils sont survolés */
 }
-
 .nav-link.active {
-  background-color: #555;
-  color: #fff;
+  background-color: #555; /* Définit la couleur de fond des liens de la liste de navigation de la barre de navigation lorsqu'ils sont actifs */
+  color: #fff; /* Définit la couleur de texte des liens de la liste de navigation de la barre de navigation lorsqu'ils sont actifs */
 }
 
 .visually-hidden {
@@ -100,41 +90,41 @@ body {
 
 
 
-
-
-
 /* // footer // */
 footer-1 {
-  width: 100%;
+  width: 100%; /* Définit la largeur du pied de page */
 }
 
 .footer {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-grow: 1; /* Ajoutez cette ligne */
+  background-color: black; /* Définit la couleur de fond du pied de page */
+  color: white; /* Définit la couleur de texte du pied de page */
+  padding: 20px; /* Ajoute un padding de 20px au pied de page */
+  display: flex; /* Définit l'affichage du pied de page en flexbox */
+  justify-content: space-evenly; /* Définit la justification du contenu du pied de page */
+  align-items: flex-start; /* Définit l'alignement des éléments du pied de page */
+  flex-grow: 1; /* Définit la croissance du pied de page en flexbox */
 }
-  
+
 .footer-logo {
-  text-align: left;
-  width: 20%; /* Définissez la largeur en pourcentage */
-}
+  text-align: left; /* Définit l'alignement du texte de la section logo du pied de page */
+  margin: 0; /* Supprime le marge du haut et du bas de la section
+  logo du pied de page */
+  }
 
-.footer-links {
-  text-align: center;
-  width: 40%; /* Définissez la largeur en pourcentage */
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-
+a:hover {
+    color: #23527c;
+  }
 .footer-map {
   text-align: right;
-  width: 40%; /* Définissez la largeur en pourcentage */
+  width: 40%; 
 }
-  .footer-image {
-    width: 100px;
-  }
+.footer-image {
+  width: 100px;
+}
 
 
 /* Mobile Devices (max-width: 480px) */

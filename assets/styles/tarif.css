@@ -61,9 +61,10 @@
 }
 
 /* Style pour les titres */
-h1, h3, h5 {
+h1,h2, h3, h5 {
   font-weight: bold; /* Rend le texte gras */
   margin-bottom: 20px; /* Ajoute un espace entre les éléments */
+  font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -77,6 +78,9 @@ h3 {
 h5 {
   font-size: 18px; /* Définit la taille de police à 18px */
   text-align: center; /* Centre le texte */
+}
+p {
+  font-family: Dotum, sans-serif;
 }
 
 /* Style pour le conteneur */

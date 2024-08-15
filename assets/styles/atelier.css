@@ -1,14 +1,13 @@
-
 /* Style pour la bannière */
 .ban {
-  position: relative; /* Rend la bannière relative */
+  position: relative; /* Rend la bannière relative pour positionner les éléments enfants */
 }
 
 .ban-image img {
-  width: 90%; /* Définit la largeur de l'image de bannière à 90% */
-  height: 100%; /* Définit la hauteur de l'image de bannière à 100% */
-  object-fit: cover; /* Fait de l'image une image de couverture */
-  border-radius: 60px; /* Ajoute un rayon de bordure à l'image */
+  width: 90%; /* Définit la largeur de l'image de bannière à 90% de la largeur du conteneur */
+  height: 100%; /* Définit la hauteur de l'image de bannière à 100% de la hauteur du conteneur */
+  object-fit: cover; /* Fait de l'image une image de couverture pour qu'elle occupe tout l'espace disponible */
+  border-radius: 60px; /* Ajoute un rayon de bordure à l'image pour donner un aspect arrondi */
 }
 
 
@@ -40,9 +39,14 @@
   font-size: 1.5em;
   margin: 15px 0;
   color: #333;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
 }
 
+
+
 .card p {
+  font-family: Dotum, sans-serif;
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 15px;

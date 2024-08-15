@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\ReservationRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use App\Entity\Table;
 
 #[ORM\Entity(repositoryClass: ReservationRepository::class)]
 class Reservation
@@ -31,6 +32,10 @@ class Reservation
 
     #[ORM\Column]
     private ?int $nombrePersonnes = null;
+
+    #[ORM\ManyToOne(targetEntity: Table::class, inversedBy: 'reservations')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Table $table = null;
 
     public function getId(): ?int
     {
@@ -105,6 +110,18 @@ class Reservation
     public function setNombrePersonnes(int $nombrePersonnes): self
     {
         $this->nombrePersonnes = $nombrePersonnes;
+
+        return $this;
+    }
+
+    public function getTable(): ?Table
+    {
+        return $this->table;
+    }
+
+    public function setTable(?Table $table): self
+    {
+        $this->table = $table;
 
         return $this;
     }

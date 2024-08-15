@@ -1,162 +1,181 @@
-
 /* Style pour la bannière */
 .ban {
-  width: 100%;
-  text-align: center;
+  width: 100%; /* La bannière prend la largeur totale de l'écran */
+  text-align: center; /* Le texte est centré */
 }
 
 .ban-image {
-  width: 100%;
-  height: auto;
-  padding: 20px;
+  width: 100%; /* L'image de la bannière prend la largeur totale de l'écran */
+  height: auto; /* La hauteur de l'image est automatiquement ajustée en fonction de la largeur */
+  padding: 20px; /* Un padding de 20px est ajouté autour de l'image */
 }
 
 /* Style pour la section des images */
 .image-container {
+  /* Utilise flexbox pour disposer les images en ligne */
   display: flex;
+  /* Permet de passer à la ligne suivante si nécessaire */
   flex-wrap: wrap;
+  /* Centre les images horizontalement */
   justify-content: center;
 }
 
 .image-item {
+  /* Largeur de chaque image */
   width: 20%;
+  /* Marge entre les images */
   margin: 10px;
+  /* Ajoute une ombre pour donner du relief */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .spacer {
+  /* Hauteur d'un espace entre les éléments */
   height: 20px;
 }
 
 /* Style pour la section du texte */
 .text-content {
+  /* Centre le texte horizontalement */
   text-align: center;
+  /* Marge supérieure pour créer un espace */
   margin-top: 60px;
 }
 
 .chatelier {
+  /* Police en gras et taille 24px */
   font-weight: bold;
   font-size: 24px;
-  text-align: center; /* Ajouté pour centrer le titre */
+  /* Centre le titre horizontalement */
+  text-align: center;
 }
 
 /* Style pour les sections avec un fond blanc */
 .white-background {
+  /* Couleur de fond blanche */
   background-color: #ffffff;
+  /* Marge interne pour créer un espace */
   padding: 20px;
 }
-
 /* Style pour les images de flyer */
 .flyer-image {
+  /* Largeur et hauteur des images de flyer */
   width: 250px;
   height: 250px;
+  /* Marge entre les images */
   margin: 10px;
+  /* Ajoute une ombre pour donner du relief */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+h2 {
+  /* Taille et police en gras pour les titres */
+  font-size: 24px;
+  font-weight: bold;
+  /* Centre les titres horizontalement */
+  text-align: center;
+  /* Applique la police Arial */
+  font-family: Arial, sans-serif;
+}
+p {
+  /* Taille de police pour les paragraphes */
+  font-size: 18px;
+  /* Centre les paragraphes horizontalement */
+  text-align: center;
+  font-family: Dotum, sans-serif;
+}
 /* Style pour les boutons */
 .btn-dark {
+  /* Couleur de fond et couleur de texte pour les boutons */
   background-color: #333;
   color: #ffffff;
+  /* Marge interne et bordure pour les boutons */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  /* Curseur pour les boutons */
   cursor: pointer;
-  text-align: center; /* Ajouté pour centrer le texte du bouton */
-  margin: 0 auto; /* Ajouté pour centrer le bouton */
-  display: block; /* Ajouté pour centrer le bouton */
+  /* Centre les boutons horizontalement */
+  text-align: center;
+  /* Z-index pour les boutons */
+  z-index: 1;
 }
-
 .btn-dark:hover {
+  /* Couleur de fond pour les boutons au survol */
   background-color: #444;
 }
-/* Mobile Devices (max-width: 480px) */
+/* Style pour le bouton Chatelier */
+.chatelier-button {
+  width: 100%; /* Fait que le bouton prend la largeur totale */
+  text-align: center; /* Centre le texte du bouton */
+}
+
+/* Style pour le bouton Boissons */
+.boissons-button {
+  float: left; /* Fait flotter le bouton à gauche */
+}
+
+/* Style pour le bouton Gourmandises */
+.gourmandises-button {
+  float: right; /* Fait flotter le bouton à droite */
+}
+
+/* Style pour le bouton Les Chats */
+.les-chats-button {
+  float: left; /* Fait flotter le bouton à gauche */
+}
+
+/* Media Queries pour les appareils mobiles (max-width: 480px) */
 @media only screen and (max-width: 480px) {
   /* Style pour la bannière */
- .ban {
+  .ban {
+    /* Hauteur de la bannière */
     height: 150px;
   }
- .ban-image {
+  .ban-image {
+    /* Hauteur de l'image de la bannière */
     height: 150px;
+    /* Ajuste l'image pour qu'elle soit entièrement visible */
     object-fit: cover;
   }
 
   /* Style pour la section des images */
- .image-container {
+  .image-container {
+    /* Disposition des images en colonne */
     flex-direction: column;
   }
- .image-item {
+  .image-item {
+    /* Largeur des images */
     width: 100%;
+    /* Marge inférieure pour créer un espace */
     margin-bottom: 20px;
   }
- .spacer {
+  .spacer {
+    /* Masque l'espace entre les éléments */
     display: none;
   }
 
   /* Style pour la section du texte */
- .text-content {
+  .text-content {
+    /* Marge interne pour créer un espace */
     padding: 20px;
+    /* Marge supérieure pour créer un espace */
     margin-top: 60%;
   }
- .chatelier {
+  .chatelier {
+    /* Taille de police pour les titres */
     font-size: 20px;
   }
 
   /* Style pour les sections avec un fond blanc */
- .white-background {
+  .white-background {
+    /* Marge interne pour créer un espace */
     padding: 20px;
   }
- .flyer-image {
+  .flyer-image {
+    /* Largeur et hauteur des images de flyer */
     width: 100%;
     height: 150px;
-    object-fit: cover;
-  }
-
-  /* Style pour les boutons */
- .btn-dark {
-    width: 100%;
-  }
-}
-
-/* Tablet Devices (max-width: 768px) */
-@media only screen and (max-width: 768px) {
-  /* Style pour la bannière */
- .ban {
-    height: 250px;
-  }
- .ban-image {
-    height: 250px;
-    object-fit: cover;
-  }
-
-  /* Style pour la section des images */
- .image-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
- .image-item {
-    width: 50%;
-    margin-bottom: 20px;
-  }
- .spacer {
-    display: block;
-  }
-
-  /* Style pour la section du texte */
- .text-content {
-    padding: 30px;
-  }
- .chatelier {
-    font-size: 24px;
-  }
-
-  /* Style pour les sections avec un fond blanc */
- .white-background {
-    padding: 30px;
-  }
- .flyer-image {
-    width: 50%;
-    height: 200px;
+    /* Ajuste l'image pour qu'elle soit entièrement visible */
     object-fit: cover;
   }
 

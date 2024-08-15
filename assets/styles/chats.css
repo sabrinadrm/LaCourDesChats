@@ -1,61 +1,70 @@
-
 .ban {
-        position: relative;
-    }
+  position: relative; /* définit la position de l'élément comme relative */
+}
 .ban img {
-        width: 100%;
-        border-radius: 60px;
-    }
+  width: 100%; /* définit la largeur de l'image à 100% de son parent */
+  border-radius: 60px; /* ajoute un radius de 60px à l'image */
+}
+
 .text-center {
-        text-align: center;
-    }
+  text-align: center; /* centre le texte horizontalement */
+}
 .separator {
-        border: 1;
-        border-top: 13px solid #fefefe;
-        margin: 2rem 0;
-    }
+  border: 1; /* définit une bordure de 1px */
+  border-top: 13px solid #fefefe; /* définit une bordure supérieure de 13px solide avec une couleur blanche */
+  margin: 2rem 0; /* ajoute une marge de 2rem en haut et en bas */
+}
 .image-container {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 10px 0;
-    }
+  width: 100%; /* définit la largeur du conteneur à 100% de son parent */
+  height: 400px; /* définit la hauteur du conteneur à 400px */
+  display: flex; /* définit le display comme flex */
+  flex-wrap: wrap; /* permet aux éléments flex de s'empiler sur la ligne suivante */
+  justify-content: center; /* centre les éléments flex horizontalement */
+  align-items: center; /* centre les éléments flex verticalement */
+  margin: 10px 0; /* ajoute une marge de 10px en haut et en bas */
+}
 .image-container img {
-        width: 225px;
-        height: 230px;
-        margin-right: 10px;
-    }
+  width: 225px; /* définit la largeur de l'image à 225px */
+  height: 230px; /* définit la hauteur de l'image à 230px */
+  margin-right: 10px; /* ajoute une marge de 10px à droite */
+}
 
 .container {
-  width: 200%;
-  height: 200%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-
+  width: 200%; /* définit la largeur du conteneur à 200% de son parent */
+  height: 200%; /* définit la hauteur du conteneur à 200% de son parent */
+  display: flex; /* définit le display comme flex */
+  flex-wrap: wrap; /* permet aux éléments flex de s'empiler sur la ligne suivante */
+  justify-content: space-between; /* distribue les éléments flex de manière égale avec un espace entre eux */
+  align-items: center; /* centre les éléments flex verticalement */
+  margin: 10px 0; /* ajoute une marge de 10px en haut et en bas */
+}
+h2, h3 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  
+}
+p {
+  font-family: Dotum, sans-serif;
 }
 
 
 .card {
-    width: 45%; /* Ajustez ce pourcentage selon vos besoins */
-    max-width: 600px; /* Optionnel : Définissez une largeur maximale pour la carte */
+    width: 45%; 
+    max-width: 600px; 
     border: 1px solid #ffffff;
     border-radius: 10px;
     margin: 10px;
-    padding: 20px; /* Ajustez le padding selon vos besoins */
+    padding: 20px;
     display: flex;
-    flex-direction: column; /* Assurez-vous que le contenu s'empile correctement sur les écrans plus petits */
+    flex-direction: column; 
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    color: black; /* Changez la couleur du texte pour assurer la lisibilité */
-    font-size: 18px; /* Ajustez la taille de police selon vos besoins */
+    color: black;  
+    font-size: 18px; 
     text-align: center;
 }
   

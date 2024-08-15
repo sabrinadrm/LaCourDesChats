@@ -1,5 +1,5 @@
 .custom-card {
-    width: 190px;
+    width: 250px;
     height: 254px;
     border-radius: 30px;
     background: #fff;
@@ -18,7 +18,12 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+  h1, h3, h5 {
+    font-family: Arial, sans-serif;
+  }
+  p {
+    font-family: Dotum, sans-serif;
+  }
   
   
   .overlay-content {
