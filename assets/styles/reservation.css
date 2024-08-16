@@ -1,46 +1,112 @@
-/* Centre le texte de l'en-tête */
-.header {
-  text-align: center;
+/* Global */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Définit la largeur et le rayon de bordure de l'image de l'en-tête */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  flex-basis: 50%;
+}
+
+/* Header */
+
+
 .header img {
-  width: 90%;
-  border-radius: 60px;
+  width: 90%; /* Définit la largeur de l'image de bannière à 90% de la largeur du conteneur */
+  height: 100%; /* Définit la hauteur de l'image de bannière à 100% de la hauteur du conteneur */
+  object-fit: cover; /* Fait de l'image une image de couverture pour qu'elle occupe tout l'espace disponible */
+  border-radius: 60px; /* Ajoute un rayon de bordure à l'image pour donner un aspect arrondi */
 }
 
-/* Définit le style du séparateur */
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 .separator {
-  border: 1;
-  border-top: 25px solid #8B4513;
-  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
 }
 
-/* Définit la largeur et la hauteur du logo */
-.logo {
-  width: 60%;
-  height: auto;
-}
-/* Définit le style des formulaires */
-.large-form table {
-  width: 100%;
-}
+/* Alertes */
 
-/* Définit le style des cellules des formulaires */
-.large-form table td {
+.alert {
   padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-/* Définit le style des champs de saisie des formulaires */
-.large-form input[type="text"], .large-form input[type="date"], .large-form input[type="time"], .large-form input[type="email"], .large-form input[type="number"] {
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #8bc34a;
+  color: #3e8e41;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+/* Section */
+
+section {
+  padding: 20px;
+}
+
+.logo {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
   width: 100%;
+  height: 40px;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
 }
 
-/* Définit le style du bouton de soumission des formulaires */
-.large-form button[type="submit"] {
+button[type="submit"] {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
@@ -49,127 +115,6 @@
   cursor: pointer;
 }
 
-/* Définit le style du bouton de soumission des formulaires lorsqu'il est survolé */
-.large-form button[type="submit"]:hover {
-  background-color: #555;
-}
-/* only screen and (max-width: 480px) */
-@media only screen and (max-width: 480px) {
-  /* Style pour l'en-tête */
-  .header {
-    padding: 20px;
-  }
-  .header img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  .header h1 {
-    font-size: 18px;
-  }
-  
-  /* Style pour la section */
-  .container {
-    padding: 20px;
-  }
-  .row {
-    flex-direction: column;
-  }
-  .col-md-6 {
-    width: 100%;
-  }
-  .logo {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-  }
-  h2 {
-    font-size: 16px;
-  }
-  p {
-    font-size: 14px;
-  }
-  form {
-    padding: 20px;
-  }
-  table {
-    width: 100%;
-  }
-  tr {
-    display: block;
-  }
-  td {
-    display: block;
-    width: 100%;
-  }
-  input[type="text"], input[type="date"], input[type="time"], input[type="email"], input[type="number"] {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
-  }
-  button[type="submit"] {
-    width: 100%;
-    height: 30px;
-  }
-}
-
-/* only screen and (max-width: 768px) */
-@media only screen and (max-width: 768px) {
-  /* header */
-.header {
-    padding: 30px;
-  }
-.header img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-.header h1 {
-    font-size: 22px;
-  }
-  
-  /* section */
-.container {
-    padding: 30px;
-  }
-.row {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-.col-md-6 {
-    width: 50%;
-  }
-.logo {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-h2 {
-    font-size: 18px;
-  }
-p {
-    font-size: 16px;
-  }
-form {
-    padding: 30px;
-  }
-table {
-    width: 100%;
-  }
-tr {
-    display: table-row;
-  }
-td {
-    display: table-cell;
-    width: 50%;
-  }
-input[type="text"], input[type="date"], input[type="time"], input[type="email"], input[type="number"] {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 15px;
-  }
-button[type="submit"] {
-    width: 100%;
-    height: 40px;
-  }
+button[type="submit"]:hover {
+  background-color: #444;
 }

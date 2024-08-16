@@ -9,6 +9,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TimeType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 
 class ReservationType extends AbstractType
@@ -29,11 +30,14 @@ class ReservationType extends AbstractType
                 'label' => 'Date',
                 'format' => 'dd-MM-yyyy',
                 'widget' => 'single_text',
+                'min' => new \DateTime('today'), // Définit la date minimale à aujourd'hui
             ])
-            ->add('heure', DateType::class, [
+            ->add('heure', TimeType::class, [
                 'label' => 'Heure',
                 'format' => 'HH:mm',
                 'widget' => 'single_text',
+                'min' => '11:00', // Définit l'heure minimale à 11h00
+                'max' => '00:00', // Définit l'heure maximale à 00h00
             ])
             ->add('nombrePersonnes', IntegerType::class, [
                 'label' => 'Nombre de personnes',
@@ -48,3 +52,4 @@ class ReservationType extends AbstractType
         ]);
     }
 }
+

@@ -16,6 +16,11 @@
         {{ message }}
       </div>
   {% endfor %}
+  {% for message in app.flashes('error') %}
+      <div class="alert alert-danger">
+        {{ message }}
+      </div>
+  {% endfor %}
 </div>
 
 <section>
@@ -27,29 +32,10 @@
       <div class="col-md-6">
         <h2>Informations sur la réservation</h2>
         <p>Vous pouvez réserver votre table en ligne, ou si vous venez au bar nous prennons sans réservations</p>
-        <form method="post" class="large-form">
-          <table>
-            <tr>
-              <td>Nom:</td>
-              <td><input type="text" name="nom"></td>
-              <td>Prénom:</td>
-              <td><input type="text" name="prenom"></td>
-            </tr>
-            <tr>
-              <td>Date:</td>
-              <td><input type="date" name="date"></td>
-              <td>Heure:</td>
-              <td><input type="time" name="heure"></td>
-            </tr>
-            <tr>
-              <td>Adresse email:</td>
-              <td><input type="email" name="email"></td>
-              <td>Nombre de personnes:</td>
-              <td><input type="number" name="nombrePersonnes"></td>
-            </tr>
-          </table>
-          <button class="btn btn-dark" type="submit">Réserver</button>
-        </form>
+        {{ form_start(form) }}
+          {{ form_widget(form) }}
+            <button class="btn btn-dark" type="submit">Réserver</button>
+      {{ form_end(form) }}
       </div>
     </div>
   </div>
