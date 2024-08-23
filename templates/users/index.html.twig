@@ -29,8 +29,8 @@
                 <td>{{ user.prenom }}</td>
                 <td>{{ user.telephone }}</td>
                 <td>
-                    <a href="{{ path('app_users_show', {'id': user.id}) }}">Afficher</a>
-                    <a href="{{ path('app_users_edit', {'id': user.id}) }}">Éditer</a>
+                    <a href="{{ path('app_users_show', {'id': user.id}) }}" style="color: black;">Afficher</a>
+                    <a href="{{ path('app_users_edit', {'id': user.id}) }}" style="color: black;">Éditer</a>
                 </td>
             </tr>
         {% else %}

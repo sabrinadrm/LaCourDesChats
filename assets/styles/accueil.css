@@ -1,3 +1,10 @@
+/* Réinitialiser les styles par défaut du corps de la page */
+body {
+  border: none; /* Supprime la bordure par défaut du corps de la page */
+  margin: 0; /* Supprime la marge par défaut du corps de la page */
+  padding: 0; /* Supprime le padding par défaut du corps de la page */
+}
+
 /* Style pour la bannière */
 .ban {
   width: 100%; /* La bannière prend la largeur totale de l'écran */
@@ -21,10 +28,7 @@
 }
 
 .image-item {
-  /* Largeur de chaque image */
-  width: 20%;
-  /* Marge entre les images */
-  margin: 10px;
+  border: none;
   /* Ajoute une ombre pour donner du relief */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -57,16 +61,19 @@
   /* Marge interne pour créer un espace */
   padding: 20px;
 }
+
 /* Style pour les images de flyer */
 .flyer-image {
   /* Largeur et hauteur des images de flyer */
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   /* Marge entre les images */
   margin: 10px;
   /* Ajoute une ombre pour donner du relief */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: none;
 }
+
 h2 {
   /* Taille et police en gras pour les titres */
   font-size: 24px;
@@ -76,6 +83,7 @@ h2 {
   /* Applique la police Arial */
   font-family: Arial, sans-serif;
 }
+
 p {
   /* Taille de police pour les paragraphes */
   font-size: 18px;
@@ -83,6 +91,7 @@ p {
   text-align: center;
   font-family: Dotum, sans-serif;
 }
+
 /* Style pour les boutons */
 .btn-dark {
   /* Couleur de fond et couleur de texte pour les boutons */
@@ -99,10 +108,12 @@ p {
   /* Z-index pour les boutons */
   z-index: 1;
 }
+
 .btn-dark:hover {
   /* Couleur de fond pour les boutons au survol */
   background-color: #444;
 }
+
 /* Style pour le bouton Chatelier */
 .chatelier-button {
   width: 100%; /* Fait que le bouton prend la largeur totale */
@@ -126,61 +137,48 @@ p {
 
 /* Media Queries pour les appareils mobiles (max-width: 480px) */
 @media only screen and (max-width: 480px) {
-  /* Style pour la bannière */
-  .ban {
-    /* Hauteur de la bannière */
-    height: 150px;
-  }
-  .ban-image {
-    /* Hauteur de l'image de la bannière */
-    height: 150px;
-    /* Ajuste l'image pour qu'elle soit entièrement visible */
-    object-fit: cover;
-  }
-
   /* Style pour la section des images */
   .image-container {
-    /* Disposition des images en colonne */
+    /* Disposition des images en colonne pour adapter à la taille de l'écran mobile */
     flex-direction: column;
+    align-items: center; /* Centre les images horizontalement */
   }
   .image-item {
-    /* Largeur des images */
+    /* Largeur des images en mode colonne pour adapter à la taille de l'écran mobile */
     width: 100%;
-    /* Marge inférieure pour créer un espace */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Ajout d'une marge inférieure pour séparer les images */
   }
-  .spacer {
-    /* Masque l'espace entre les éléments */
-    display: none;
+  /* Cacher les éléments avec la classe hide-on-mobile sur les écrans mobiles */
+  .hide-on-mobile {
+    display: none !important; /* Cache les éléments qui ne doivent pas être affichés sur les écrans mobiles */
   }
-
   /* Style pour la section du texte */
-  .text-content {
-    /* Marge interne pour créer un espace */
-    padding: 20px;
-    /* Marge supérieure pour créer un espace */
-    margin-top: 60%;
+  p {
+    /* Empêche le texte de déborder hors de la zone de texte */
+    word-wrap: break-word;
+    padding: 0 10px; /* Ajout d'une marge intérieure pour que le texte ne touche pas les bords */
+  }
+  /* Style pour les images de flyer */
+  .flyer-image {
+    /* Largeur et hauteur des images de flyer adaptées à la taille de l'écran mobile */
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Positionner les flyers au-dessus du texte pour améliorer la lisibilité */
+  .d-flex.align-items-center {
+    flex-direction: column; /* Disposition en colonne pour les éléments flexibles */
+  }
+  .d-flex.align-items-center div {
+    text-align: center; /* Centre le texte des éléments flexibles */
   }
   .chatelier {
-    /* Taille de police pour les titres */
-    font-size: 20px;
+    font-size: 20px; /* Taille de police adaptée à la taille de l'écran mobile */
   }
-
-  /* Style pour les sections avec un fond blanc */
-  .white-background {
-    /* Marge interne pour créer un espace */
-    padding: 20px;
-  }
-  .flyer-image {
-    /* Largeur et hauteur des images de flyer */
-    width: 100%;
-    height: 150px;
-    /* Ajuste l'image pour qu'elle soit entièrement visible */
-    object-fit: cover;
-  }
-
+  
   /* Style pour les boutons */
- .btn-dark {
-    width: 50%;
+  .btn-dark {
+    width: 80%; /* Largeur des boutons adaptée à la taille de l'écran mobile */
+    margin: 10px auto; /* Centre les boutons horizontalement */
   }
 }

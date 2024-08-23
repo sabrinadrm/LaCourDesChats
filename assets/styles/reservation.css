@@ -6,6 +6,9 @@
   padding: 0;
 }
 
+body {
+  font-family: Arial, sans-serif; /* Assure une police lisible pour tout le corps de la page */
+}
 
 .container {
   max-width: 1200px;
@@ -25,17 +28,17 @@
 
 /* Header */
 
-
 .header img {
   width: 90%; /* Définit la largeur de l'image de bannière à 90% de la largeur du conteneur */
-  height: 100%; /* Définit la hauteur de l'image de bannière à 100% de la hauteur du conteneur */
+  height: auto; /* Ajuste la hauteur de l'image en fonction de la largeur pour garder le ratio d'aspect */
   object-fit: cover; /* Fait de l'image une image de couverture pour qu'elle occupe tout l'espace disponible */
-  border-radius: 60px; /* Ajoute un rayon de bordure à l'image pour donner un aspect arrondi */
+  border-radius: 10px; /* Ajoute un rayon de bordure à l'image pour donner un aspect arrondi */
 }
 
 .header h1 {
   font-size: 24px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .separator {
@@ -71,8 +74,8 @@ section {
 }
 
 .logo {
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
   margin: 20px;
@@ -106,7 +109,15 @@ input[type="text"], input[type="email"], input[type="tel"] {
   border: 1px solid #ccc;
 }
 
-button[type="submit"] {
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"], .btn-dark {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
@@ -115,6 +126,6 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover, .btn-dark:hover {
   background-color: #444;
 }

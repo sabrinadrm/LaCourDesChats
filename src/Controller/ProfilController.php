@@ -28,31 +28,13 @@ class ProfilController extends AbstractController
             'users' => $users,
             'user' => $user
         ]);
+        
     } else {
         return $this->render('profil/profil.html.twig', [
             'user' => $user,
         ]);
     }
 }
-    #[Route('/users/new', name: 'user_new')]
-    public function new(Request $request, EntityManagerInterface $entityManager): Response
-    {
-        $user = new User();
-        $form = $this->createForm(ProfilType::class, $user);
-
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->persist($user);
-            $entityManager->flush();
-
-            return $this->redirectToRoute('users');
-        }
-
-        return $this->render('users/new.html.twig', [
-            'form' => $form->createView(),
-        ]);
-    }
 
  
     #[Route('/users/{id}', name: 'user_show')]

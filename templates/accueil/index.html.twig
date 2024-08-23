@@ -12,27 +12,18 @@
 <section>
   <div class="container"> 
     <div class="image-container">
-      <img src="{{ asset('image/place.png') }}" alt="Image du lieur" class="image-item">
       <img src="{{ asset('image/tableau_chat.png') }}" alt="Image d'un tableau" class="image-item">
       <img src="{{ asset('image/jeux_chat.png') }}" alt="Image de jeux" class="image-item">
-      <img src="{{ asset('image/atelier_pot.png') }}" alt="Image de potrie" class="image-item">
-      <div class="spacer"></div>
-      <img src="{{ asset('image/calendrier.png') }}" alt="Image de calendrier " class="image-item">
-      <img src="{{ asset('image/jeux_chats.png') }}" alt="Image de jeux " class="image-item">
-      <img src="{{ asset('image/coeur.png') }}" alt="Image de potrie" class="image-item">
-      <img src="{{ asset('image/atelier_pot2.png') }}" alt="Image de potrie" class="image-item">
-    </div>
+      {# <img src="{{ asset('image/calendrier.png') }}" alt="Image de calendrier " class="image-item hide-on-mobile">
+      <img src="{{ asset('image/coeur.png') }}" alt="Image de potrie" class="image-item hide-on-mobile">
+    </div> #}
   </div>
   <div class="text-content">
-    <div class="container">
-      <div class="row">
-        <h2 class="chatelier">Chatelier</h2>
-        <p>Bienvenue dans notre espace dédié à la créativité et à l'expression artistique et un lieu de rencontre, de partage et de convivialité. Chez La Cour des Chats, nous sommes fiers d'offrir une gamme d'ateliers stimulants où chacun peut laisser libre cours à son imagination et explorer son côté artistique. Découvrez nos ateliers de peinture, de poterie et de création de colliers, conçus pour inspirer et émerveiller.</p>  
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <a href="{{path('app_atelier')}}" class="btn btn-dark chatelier-button" type="button">Chatelier</a>
-          </div></br>
-        </div>
+    <h2 class="chatelier">Chatelier</h2>
+    <p>Bienvenue dans notre espace dédié à la créativité...</p>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a href="{{ path('app_atelier') }}" class="btn btn-dark chatelier-button" type="button">Chatelier</a>
       </div>
     </div>
   </div>
@@ -40,35 +31,28 @@
 
 <section class="white-background">
   <div class="container">
-    <div class="row">
       <div class="d-flex align-items-center">
         <img src="{{ asset('image/flyer/Boisson.png') }}" alt="flyer des boissons" class="flyer-image me-3">
-        <div class="container">
-          <div class="row">
-            <h2>Boissons</h2>
-            <p>Chaque gorgée est une invitation à la détente et au plaisir. Chez La Cour des Chats, nous mettons un point d'honneur à 
-            offrir une sélection variée et raffinée qui saura satisfaire tous les palais.</p></br>
-          </div>
+        <div>
+          <h2>Boissons</h2>
+          <p>Chaque gorgée est une invitation...</p>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
-        <a href="{{path('app_tarif')}}" class="btn btn-dark boissons-button">Les Boissons </a>
+        <a href="{{ path('app_tarif') }}" class="btn btn-dark boissons-button">Les Boissons </a>
       </div>
-    </div>
   </div>
 </section>
 
+
 <section>
   <div class="container">
-    <div class="row">
       <div class="d-flex align-items-center">
-        <div class="container">
-          <div class="row">
+        <div>
             <h2>Gourmandises</h2>
-            <p>Un véritable paradis pour les amateurs de délices sucrés et salés. Chez La Cour des Chats, nous vous proposons une variété de gourmandises faites maison, ainsi que des classiques irrésistibles, afin de satisfaire toutes vos envies gourmandes.</p> 
-          </div>
+            <p>Un véritable paradis pour les amateurs de délices sucrés et salés.</p> 
         </div>
         <img src="{{ asset('image/flyer/Gourmandise.png') }}" alt="flyer des gourmandises" class="flyer-image me-3" />
       </div>
@@ -76,24 +60,19 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <a href="{{path('app_tarif')}}"  class="btn btn-dark gourmandises-button">Les Gourmandises</a>
-      </div></br>
-    </div>
-  </div></br>
+      </div>
+  </div>
 </section>
 
 <section class="white-background">
   <div class="container">
-    <div class="row">
       <div class="d-flex align-items-center">
         <img src="{{ asset('image/flyer/chat.png') }}" alt="flyer des chats" class="flyer-image me-3" />
-        <div class="container">
-          <div class="row">
+        <div>
             <h2>Les chats</h2>
-            <p>Au cœur de notre établissement, vous trouverez des amis à quatre pattes tout aussi accueillants que nos boissons et gourmandises. Chez La Cour des Chats, nous avons le plaisir d'accueillir une joyeuse bande de félins, prêts à vous offrir compagnie et câlins tout au long de votre visite.</p>
-          </div>
+            <p>Nous avons le plaisir d'accueillir une joyeuse bande de félins.</p></br>
         </div>
       </div>
-    </div>
     <div class="row">
       <div class="col-md-12 text-center">
         <a href="{{path('app_chats')}}" class="btn btn-dark les-chats-button">Les chats</a>

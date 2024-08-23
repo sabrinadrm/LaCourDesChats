@@ -1,129 +1,140 @@
+/* Style de base pour les images de concept */
 .concept-image {
-  width: 100%;
-  padding: 20px;
-  border-radius: 60px;
-  position: relative;
+  width: 100%; /* Assure que l'image prend toute la largeur de son conteneur */
+  padding: 20px; /* Ajoute un espacement autour de l'image */
+  border-radius: 60px; /* Arrondit les coins de l'image */
+  position: relative; /* Position relative pour le placement éventuel d'éléments enfants */
 }
 
+/* Style pour le séparateur */
 .separator {
-  border: 1px solid #8B4513;
-  margin: 7rem 0;
-  margin-top: 50px;
+  border: 1px solid #8B4513; /* Définit une bordure solide avec une couleur marron */
+  margin: 7rem 0; /* Ajoute une marge en haut et en bas */
+  margin-top: 50px; /* Ajuste la marge supérieure pour un espacement spécifique */
 }
 
+/* Justifie le texte */
 .text-justify {
-  text-align: justify;
+  text-align: justify; /* Aligne le texte pour qu'il soit justifié */
 }
 
+/* Centre le texte */
 .text-center {
-  text-align: center;
+  text-align: center; /* Centre le texte horizontalement */
 }
 
+/* Style pour les titres h2 et h3 */
 h2, h3 {
-font-family: Arial, sans-serif;
-font-size: 24px;
-font-weight: bold;
+  font-family: Arial, sans-serif; /* Définit la police de caractères */
+  font-size: 24px; /* Définit la taille de la police */
+  font-weight: bold; /* Met le texte en gras */
 }
+
+/* Style pour les paragraphes */
 p {
-  font-family: Dotum, sans-serif;
+  font-family: Dotum, sans-serif; /* Définit la police de caractères */
 }
 
-/* only screen and (max-width: 480px) */
+/* Responsive pour les écrans de moins de 480px (mobiles) */
 @media only screen and (max-width: 480px) {
-/* section 1 */
-.concept-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+  /* Section 1 : Image de concept */
+  .concept-image {
+    height: 150px; /* Ajuste la hauteur de l'image */
+    object-fit: cover; /* Assure que l'image couvre entièrement l'espace sans déformation */
+  }
+
+  /* Section 2 : Conteneur et texte */
+  .container {
+    padding: 20px; /* Ajoute un espacement intérieur au conteneur */
+  }
+  
+  .text-justify {
+    font-size: 16px; /* Réduit la taille de la police pour les petits écrans */
+  }
+
+  .img-fluid {
+    height: 150px; /* Ajuste la hauteur des images fluides */
+    object-fit: cover; /* Assure que l'image couvre l'espace sans déformation */
+  }
+
+  /* Section 3 : Disposition des colonnes */
+  .row {
+    flex-direction: column; /* Empile les colonnes verticalement */
+  }
+
+  .col-7, .col-5 {
+    width: 100%; /* Chaque colonne prend toute la largeur de son conteneur */
+  }
+
+  /* Section 4 : Taille du texte centré */
+  .text-center {
+    font-size: 18px; /* Ajuste la taille de la police du texte centré */
+  }
+
+  /* Section 5 : Répétition pour une meilleure couverture */
+  .row {
+    flex-direction: column; /* Empile les colonnes verticalement */
+  }
+
+  .col-5, .col-7 {
+    width: 100%; /* Chaque colonne prend toute la largeur de son conteneur */
+  }
+
+  /* Section 6 : Taille du texte centré */
+  .text-center {
+    font-size: 18px; /* Ajuste la taille de la police du texte centré */
+  }
 }
 
-/* section 2 */
-.container {
-  padding: 20px;
-}
-.text-justify {
-  font-size: 16px;
-}
-.img-fluid {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-/* section 3 */
-.row {
-  flex-direction: column;
-}
-.col-7,.col-5 {
-  width: 100%;
-}
-
-/* section 4 */
-.text-center {
-  font-size: 18px;
-}
-
-/* section 5 */
-.row {
-  flex-direction: column;
-}
-.col-5,.col-7 {
-  width: 100%;
-}
-
-/* section 6 */
-.text-center {
-  font-size: 18px;
-}
-}
-
-/* only screen and (max-width: 768px) */
+/* Responsive pour les écrans de moins de 768px (tablettes) */
 @media only screen and (max-width: 768px) {
-/* section 1 */
-.concept-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
+  /* Section 1 : Image de concept */
+  .concept-image {
+    height: 250px; /* Ajuste la hauteur de l'image */
+    object-fit: cover; /* Assure que l'image couvre l'espace sans déformation */
+  }
 
-/* section 2 */
-.container {
-  padding: 30px;
-}
-.text-justify {
-  font-size: 18px;
-}
-.img-fluid {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
+  /* Section 2 : Conteneur et texte */
+  .container {
+    padding: 30px; /* Ajoute un espacement intérieur au conteneur */
+  }
+  
+  .text-justify {
+    font-size: 18px; /* Ajuste la taille de la police pour les écrans moyens */
+  }
 
-/* section 3 */
-.row {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.col-7,.col-5 {
-  width: 50%;
-}
+  .img-fluid {
+    height: 200px; /* Ajuste la hauteur des images fluides */
+    object-fit: cover; /* Assure que l'image couvre l'espace sans déformation */
+  }
 
-/* section 4 */
-.text-center {
-  font-size: 20px;
-}
+  /* Section 3 : Disposition des colonnes */
+  .row {
+    flex-direction: row; /* Arrange les colonnes horizontalement */
+    flex-wrap: wrap; /* Permet aux colonnes de se répartir sur plusieurs lignes si nécessaire */
+  }
 
-/* section 5 */
-.row {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.col-5,.col-7 {
-  width: 50%;
-}
+  .col-7, .col-5 {
+    width: 50%; /* Chaque colonne prend la moitié de la largeur de son conteneur */
+  }
 
-/* section 6 */
-.text-center {
-  font-size: 20px;
-}
+  /* Section 4 : Taille du texte centré */
+  .text-center {
+    font-size: 20px; /* Ajuste la taille de la police du texte centré */
+  }
+
+  /* Section 5 : Répétition pour une meilleure couverture */
+  .row {
+    flex-direction: row; /* Arrange les colonnes horizontalement */
+    flex-wrap: wrap; /* Permet aux colonnes de se répartir sur plusieurs lignes si nécessaire */
+  }
+
+  .col-5, .col-7 {
+    width: 50%; /* Chaque colonne prend la moitié de la largeur de son conteneur */
+  }
+
+  /* Section 6 : Taille du texte centré */
+  .text-center {
+    font-size: 20px; /* Ajuste la taille de la police du texte centré */
+  }
 }

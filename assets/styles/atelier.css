@@ -4,22 +4,22 @@
 }
 
 .ban-image img {
-  width: 90%; /* Définit la largeur de l'image de bannière à 90% de la largeur du conteneur */
-  height: 100%; /* Définit la hauteur de l'image de bannière à 100% de la hauteur du conteneur */
-  object-fit: cover; /* Fait de l'image une image de couverture pour qu'elle occupe tout l'espace disponible */
-  border-radius: 60px; /* Ajoute un rayon de bordure à l'image pour donner un aspect arrondi */
+  width: 100%; /* Ajuste la largeur de l'image à 100% de son conteneur */
+  height: auto; /* La hauteur est automatique pour maintenir les proportions */
+  object-fit: cover; /* Assure que l'image couvre tout l'espace disponible */
+  border-radius: 60px; /* Ajoute un rayon de bordure à l'image pour un aspect arrondi */
 }
 
-
+/* Conteneur des cartes */
 .card-container {
-  display: flex; /* Utilisation de Flexbox pour aligner les cartes sur une seule ligne */
-  justify-content: space-around; /* Répartit l'espace disponible de manière égale autour des cartes */
+  display: flex; /* Utilisation de Flexbox pour aligner les cartes */
+  justify-content: space-around; /* Répartition égale autour des cartes */
   flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si nécessaire */
 }
 
 .card {
-  flex: 0 0 calc(33.33% - 20px); /* Ajuste la largeur des cartes pour qu'elles occupent environ un tiers de l'espace disponible */
-  max-width: 300px; /* Largeur maximale des cartes pour éviter qu'elles ne deviennent trop larges */
+  flex: 0 0 calc(33.33% - 20px); /* Ajuste la largeur des cartes pour qu'elles occupent environ un tiers de l'espace */
+  max-width: 300px; /* Largeur maximale des cartes */
   margin: 10px; /* Espacement entre les cartes */
   padding: 20px; /* Espacement interne des cartes */
   text-align: center;
@@ -29,7 +29,7 @@
 }
 
 .card img {
-  max-width: 250px; /* Assure que les images s'ajustent proportionnellement */
+  max-width: 100%; /* Assure que les images s'ajustent proportionnellement */
   height: auto;
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
@@ -43,8 +43,6 @@
   font-family: Arial, sans-serif;
 }
 
-
-
 .card p {
   font-family: Dotum, sans-serif;
   font-size: 1em;
@@ -53,71 +51,58 @@
   color: #666;
 }
 
-
-
-/* only screen and (max-width: 480px) */
+/* Responsive pour les écrans de moins de 480px (mobiles) */
 @media only screen and (max-width: 480px) {
-  /* section 1 */
- .ban {
-    height: 150px;
+  .ban {
+    height: 150px; /* Hauteur de la bannière réduite pour les petits écrans */
   }
- .ban-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+  .ban-image img {
+    height: 150px; /* Hauteur de l'image ajustée pour les petits écrans */
   }
-  
-  /* section 2 */
- .card-container {
-    flex-direction: column;
+  .card-container {
+    flex-direction: column; /* Les cartes s'empilent verticalement */
   }
- .card {
-    width: 100%;
-    margin-bottom: 20px;
+  .card {
+    width: 100%; /* Les cartes prennent toute la largeur disponible */
+    margin-bottom: 20px; /* Espacement vertical entre les cartes */
   }
- .card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+  .card img {
+    width: 100%; /* Les images occupent toute la largeur des cartes */
+    height: 150px; /* Hauteur des images pour les petits écrans */
+    object-fit: cover; /* Assure que l'image couvre l'espace disponible */
   }
- .card h3 {
-    font-size: 18px;
+  .card h3 {
+    font-size: 18px; /* Taille de police ajustée pour les titres */
   }
- .card p {
-    font-size: 14px;
+  .card p {
+    font-size: 14px; /* Taille de police ajustée pour les paragraphes */
   }
 }
 
-/* only screen and (max-width: 768px) */
+/* Responsive pour les écrans de moins de 768px (tablettes) */
 @media only screen and (max-width: 768px) {
-  /* section 1 */
- .ban {
-    height: 250px;
+  .ban {
+    height: 250px; /* Hauteur de la bannière pour les tablettes */
   }
- .ban-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+  .ban-image img {
+    height: 250px; /* Hauteur de l'image pour les tablettes */
   }
-  
-  /* section 2 */
- .card-container {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .card-container {
+    flex-direction: row; /* Les cartes s'alignent en ligne, mais peuvent passer à la ligne si nécessaire */
   }
- .card {
-    width: 50%;
-    margin-bottom: 20px;
+  .card {
+    width: 50%; /* Les cartes occupent 50% de la largeur */
+    margin-bottom: 20px; /* Espacement vertical entre les cartes */
   }
- .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  .card img {
+    width: 100%; /* Les images occupent toute la largeur des cartes */
+    height: 200px; /* Hauteur des images pour les tablettes */
+    object-fit: cover; /* Assure que l'image couvre l'espace disponible */
   }
- .card h3 {
-    font-size: 20px;
+  .card h3 {
+    font-size: 20px; /* Taille de police ajustée pour les titres */
   }
- .card p {
-    font-size: 16px;
+  .card p {
+    font-size: 16px; /* Taille de police ajustée pour les paragraphes */
   }
 }

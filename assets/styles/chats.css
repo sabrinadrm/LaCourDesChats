@@ -1,196 +1,189 @@
+/* Style de base */
 .ban {
-  position: relative; /* définit la position de l'élément comme relative */
+  position: relative;
 }
+
 .ban img {
-  width: 100%; /* définit la largeur de l'image à 100% de son parent */
-  border-radius: 60px; /* ajoute un radius de 60px à l'image */
+  width: 100%;
+  border-radius: 60px;
+  height: auto; /* Ajuste la hauteur pour maintenir les proportions */
 }
 
 .text-center {
-  text-align: center; /* centre le texte horizontalement */
+  text-align: center;
 }
+
 .separator {
-  border: 1; /* définit une bordure de 1px */
-  border-top: 13px solid #fefefe; /* définit une bordure supérieure de 13px solide avec une couleur blanche */
-  margin: 2rem 0; /* ajoute une marge de 2rem en haut et en bas */
+  border: 0; /* Correction de la bordure */
+  border-top: 13px solid #fefefe;
+  margin: 2rem 0;
 }
+
 .image-container {
-  width: 100%; /* définit la largeur du conteneur à 100% de son parent */
-  height: 400px; /* définit la hauteur du conteneur à 400px */
-  display: flex; /* définit le display comme flex */
-  flex-wrap: wrap; /* permet aux éléments flex de s'empiler sur la ligne suivante */
-  justify-content: center; /* centre les éléments flex horizontalement */
-  align-items: center; /* centre les éléments flex verticalement */
-  margin: 10px 0; /* ajoute une marge de 10px en haut et en bas */
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
+
 .image-container img {
-  width: 225px; /* définit la largeur de l'image à 225px */
-  height: 230px; /* définit la hauteur de l'image à 230px */
-  margin-right: 10px; /* ajoute une marge de 10px à droite */
+  width: 225px;
+  height: 230px;
+  margin-right: 10px;
+  object-fit: cover;
 }
 
 .container {
-  width: 200%; /* définit la largeur du conteneur à 200% de son parent */
-  height: 200%; /* définit la hauteur du conteneur à 200% de son parent */
-  display: flex; /* définit le display comme flex */
-  flex-wrap: wrap; /* permet aux éléments flex de s'empiler sur la ligne suivante */
-  justify-content: space-between; /* distribue les éléments flex de manière égale avec un espace entre eux */
-  align-items: center; /* centre les éléments flex verticalement */
-  margin: 10px 0; /* ajoute une marge de 10px en haut et en bas */
+  width: 100%; /* Ajusté à 100% pour être plus fluide */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
 }
+
 h2, h3 {
   font-family: Arial, sans-serif;
   font-weight: bold;
   color: #333;
   text-align: center;
-  
 }
+
 p {
   font-family: Dotum, sans-serif;
 }
 
-
+/* Cartes */
 .card {
-    width: 45%; 
-    max-width: 600px; 
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    color: black;  
-    font-size: 18px; 
-    text-align: center;
+  width: 45%;
+  max-width: 600px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  font-size: 18px;
+  text-align: center;
 }
-  
-.toggle-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
 
-    }
-.details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-
-    }
+.toggle-details, .details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
 
 .details p {
   font-size: 20px;
   text-align: center;
   color: rgb(17, 17, 17);
-  }
+}
 
-  h2 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(17, 17, 17);
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(17, 17, 17);
+}
 
-  }
-    
-
-  /* only screen and (max-width: 480px) */
+/* Responsive pour les écrans de moins de 480px (mobiles) */
 @media only screen and (max-width: 480px) {
-  /* section 1 */
- .ban {
+  .ban {
     height: 150px;
   }
- .ban img {
-    width: 100%;
+
+  .ban img {
     height: 150px;
-    object-fit: cover;
   }
-  
-  /* section 2 */
- .container {
+
+  .container {
     padding: 20px;
   }
- .text-center {
+
+  .text-center {
     font-size: 18px;
   }
-  
-  /* section 3 */
- .image-container {
+
+  .image-container {
     flex-direction: column;
   }
- .image-container img {
+
+  .image-container img {
     width: 100%;
     height: 150px;
-    object-fit: cover;
     margin-bottom: 20px;
   }
- .spacer {
+
+  .spacer {
     display: none;
   }
-  
-  /* section 4 */
- .card {
+
+  .card {
     width: 100%;
     margin-bottom: 20px;
   }
- .card h2 {
+
+  .card h2 {
     font-size: 20px;
   }
- .card p {
+
+  .card p {
     font-size: 16px;
   }
 }
 
-/* only screen and (max-width: 768px) */
+/* Responsive pour les écrans de moins de 768px (tablettes) */
 @media only screen and (max-width: 768px) {
-  /* section 1 */
- .ban {
+  .ban {
     height: 250px;
   }
- .ban img {
-    width: 100%;
+
+  .ban img {
     height: 250px;
-    object-fit: cover;
   }
-  
-  /* section 2 */
- .container {
+
+  .container {
     padding: 30px;
   }
- .text-center {
+
+  .text-center {
     font-size: 22px;
   }
-  
-  /* section 3 */
- .image-container {
+
+  .image-container {
     flex-direction: row;
     flex-wrap: wrap;
   }
- .image-container img {
+
+  .image-container img {
     width: 50%;
     height: 200px;
-    object-fit: cover;
     margin-bottom: 20px;
   }
- .spacer {
+
+  .spacer {
     display: block;
   }
-  
-  /* section 4 */
- .card {
+
+  .card {
     width: 50%;
     margin-bottom: 20px;
   }
- .card h2 {
+
+  .card h2 {
     font-size: 24px;
   }
- .card p {
+
+  .card p {
     font-size: 18px;
   }
 }

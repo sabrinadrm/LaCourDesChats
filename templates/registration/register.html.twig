@@ -5,13 +5,16 @@
 {% block body %}
  
         <link rel="stylesheet" href="{{ asset('styles/register.css') }}">
-   
-
 <section class="container">
     <div class="row">
         <div class="col">
+            {# Affichage des erreurs de vérification d'email #}
             {% for flash_error in app.flashes('verify_email_error') %}
                 <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+            {% endfor %}
+            {# Affichage des messages de succès pour l'inscription #}
+            {% for flash_success in app.flashes('inscription_success') %}
+                <div class="alert alert-success" role="alert">{{ flash_success }}</div>
             {% endfor %}
             <h1>Inscription</h1>
             {{ form_errors(registrationForm) }}

@@ -19,13 +19,11 @@ class ReservationController extends AbstractController
 {
     private $formFactory;
     private $entityManager;
-
     public function __construct(FormFactoryInterface $formFactory, EntityManagerInterface $entityManager)
     {
         $this->formFactory = $formFactory;
         $this->entityManager = $entityManager;
     }
-
     #[Route('/reservations', name: 'app_reservations', methods: ['GET', 'POST'])]
     public function index(Request $request): Response
     {
@@ -53,7 +51,6 @@ class ReservationController extends AbstractController
             ->getForm();
     
         $form->handleRequest($request);
-    
         if ($form->isSubmitted() && $form->isValid()) {
             try {
                 $this->entityManager->persist($reservation);
@@ -63,7 +60,6 @@ class ReservationController extends AbstractController
                 $this->addFlash('error', 'Erreur lors de l\'ajout de la réservation : ' . $e->getMessage());
             }
         }
-    
         return $this->render('reservation/réservation.html.twig', [
             'form' => $form->createView(),
         ]);

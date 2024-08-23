@@ -11,7 +11,6 @@
     /* Arrière-plan blanc légèrement gris */
     background-color: #f9f9f9;
   }
-  
   /* Définition du style pour les lignes */
   .row {
     /* Mise en page en flexbox, avec wrap pour les éléments qui dépassent */
@@ -20,39 +19,32 @@
     /* Centrage horizontal des éléments */
     justify-content: center;
   }
-  
   /* Définition du style pour les colonnes */
   .col {
     /* Largeur de base de 100%, avec une marge de 20px */
     flex-basis: 100%;
     margin: 20px;
   }
-  
-  /* Définition du style pour les formulaires */
-  form {
-    /* Espacement vertical de 20px en haut */
-    margin-top: 20px;
-  }
-  
-  /* Définition du style pour les étiquettes */
+    /* Définition du style pour les étiquettes */
   label {
     /* Affichage en bloc, avec un espacement vertical de 10px en bas */
     display: block;
     margin-bottom: 10px;
   }
+  /* Définition du style pour les formulaires */
+  form {
+    margin-top: 20px;
+  }
   
   /* Définition du style pour les champs de formulaire */
   input[type="text"], input[type="email"], input[type="password"] {
-    /* Largeur de 100%, hauteur de 40px, avec un espacement vertical de 20px en bas */
     width: 100%;
     height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /*un espacement vertical de 20px en bas */
     /* Espacement intérieur de 10px */
     padding: 10px;
-    /* Bordure grise de 1px */
     border: 1px solid #ccc;
   }
-  
   /* Définition du style pour les boutons de soumission */
   button[type="submit"] {
     /* Arrière-plan noir, texte blanc, sans bordure */
@@ -65,13 +57,11 @@
     font-size: 16px;
     cursor: pointer;
   }
-  
   /* Définition du style pour les erreurs et les alertes de danger */
   .has-error, .alert-danger {
     /* Couleur de texte rouge */
     color: #a94442;
   }
-  
   /* Définition du style pour les champs de formulaire en erreur */
   .has-error input[type="text"], .has-error input[type="email"], .has-error input[type="password"], .alert-danger {
     /* Bordure rouge de 1px, arrière-plan légèrement rouge */
